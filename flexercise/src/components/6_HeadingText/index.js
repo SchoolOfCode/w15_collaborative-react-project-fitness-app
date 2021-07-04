@@ -12,5 +12,8 @@ function HeadingText({heading}) {
 export default HeadingText;
 
 // import HeadingText from "../6_HeadingText";
+// ** Explanation Page **
 // <HeadingText heading="Exercise Challenge Overview"/>
 // <HeadingText heading="Instructions"/>
+// ** Exercise Selection Page **
+//<HeadingText heading="Select Exercise"/>
