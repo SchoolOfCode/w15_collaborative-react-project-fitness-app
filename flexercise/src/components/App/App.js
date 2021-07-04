@@ -1,14 +1,11 @@
 import React from "react";
-import './App.css';
-import BackgroundImage from '../1_BgImage';
-
+import "./App.css";
+import Logo from "../2_Logo";
 
 function App() {
   return (
     <div className="App">
-      {/* <BackgroundImage /> */}
-     
-
+    
     </div>
   );
 }
