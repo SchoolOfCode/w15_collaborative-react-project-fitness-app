@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Logo from "../2_Logo";
+import ImageText from "../10_ImageWriting";
 
 function App() {
   return (
     <div className="App">
-    
+    <ImageText />
     </div>
   );
 }
