@@ -1,13 +1,14 @@
 import React from "react";
-import './App.css';
-import BackgroundImage from '../1_BgImage';
+import "./App.css";
+import BackgroundImage from "../1_BgImage";
+
 
 
 function App() {
+ 
   return (
-    <div className="App">
-      <BackgroundImage />
-      
+    <div className="App">      
+   
     </div>
   );
 }
