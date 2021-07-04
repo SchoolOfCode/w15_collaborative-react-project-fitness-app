@@ -6,8 +6,9 @@ import BackgroundImage from '../1_BgImage';
 function App() {
   return (
     <div className="App">
-      <BackgroundImage />
-      
+      {/* <BackgroundImage /> */}
+     
+
     </div>
   );
 }
