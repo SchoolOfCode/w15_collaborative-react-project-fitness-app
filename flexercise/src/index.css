@@ -10,4 +10,19 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    
 }
+
+
+
+.thinline {
+ 
+ background-color: black;
+ max-width: 1500px;
+ height: 1px;
+ margin: auto;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+
+
