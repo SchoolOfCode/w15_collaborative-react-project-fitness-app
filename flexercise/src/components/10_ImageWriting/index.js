@@ -2,22 +2,21 @@
 // When we add more images we will need to amend this to be dynamic by using objects and map function but not needed in MVP
 
 import React from "react";
-import Squat from "../App/pictures/Squat.jpg";
 
-function ImageText() {
+function ImageText({image, name, onClick}) {
   return (
-    <div className="exerciseChoice">
+    <div className="exerciseChoice" onClick={onClick}>
       <div className="exerciseImage">
         <img
-          src={Squat}
-          alt="squat"
+          src={image}
+          alt={name}
           style={{
             width: "400px",
             height: "400px",
           }}
         />
         <h2 className="imageText">
-          <span>Squats</span>
+          <span>{name}</span>
         </h2>
       </div>
     </div>
