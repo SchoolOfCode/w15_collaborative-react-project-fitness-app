@@ -1,9 +1,30 @@
-
-
 import React from "react";
+import PropTypes from "prop-types";
 
+const YoutubeEmbed = ({ embedId }) => (
+  <div className="video-responsive">
+   
+      <iframe
+        width="1000"
+        height="566"
+        src={`https://www.youtube.com/embed/${embedId}`}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        title="Embedded youtube"
+      />
+    
+  </div>
+);
 
+YoutubeEmbed.propTypes = {
+  embedId: PropTypes.string.isRequired,
+};
 
-<video className="video-container video-container-overlay" autoPlay="" loop="" muted="" data-reactid=".0.1.0.0">
-  <source type="video/mp4" data-reactid=".0.1.0.0.0" src="mov_bbb.mp4">
-</video>
+export default YoutubeEmbed;
+
+// import YoutubeEmbed from "../11_Video";
+//<YoutubeEmbed embedId="9OfycnUL0h8?ecver=1&amp" />
+// Video from - https://www.youtube.com/watch?v=9OfycnUL0h8
+//Code from here:
+//https://dev.to/bravemaster619/simplest-way-to-embed-a-youtube-video-in-your-react-app-3bk2

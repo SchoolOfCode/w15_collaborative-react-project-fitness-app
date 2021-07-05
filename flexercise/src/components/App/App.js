@@ -1,7 +1,6 @@
 import React from "react";
+import "./App.css";
 
-import "./App.css";
-import "./App.css";
 
 
 function App() {
@@ -10,10 +9,7 @@ function App() {
 
     <div className="App">      
    
-
-    <div className="App">
-
-    <ImageText />
+  
 
 
     </div>
