@@ -1,3 +1,6 @@
+// This adds the Squat picture with the word Squat over it. Styling in index.css
+// When we add more images we will need to amend this to be dynamic by using objects and map function but not needed in MVP
+
 import React from "react";
 import Squat from "../App/pictures/Squat.jpg";
 

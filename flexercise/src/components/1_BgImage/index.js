@@ -1,6 +1,8 @@
-import React from "react";
+// Background Image that covers the whole screen for landing page. 
+// Still to complete
 
-// const backgroundImg = "https://images.unsplash.com/photo-1470468969717-61d5d54fd036?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1283&q=80"
+
+import React from "react";
 
 function BackgroundImage() {
     return (
