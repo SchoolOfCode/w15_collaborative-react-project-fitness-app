@@ -1,7 +1,8 @@
 import React from "react";
-import './App.css';
-import BackgroundImage from '../1_BgImage';
-import Line from "../7_Line";
+
+import "./App.css";
+
+
 
 function App() {
   return (
