@@ -13,6 +13,28 @@ code {
     
 }
 
+/* Exercise Pictures with text over */
+.exerciseImage { 
+  position: relative; 
+  width: 100%; 
+}
+
+.imageText { 
+ position: absolute; 
+ top: 150px; 
+ left: 0; 
+ width: 100%; 
+}
+
+
+.imageText span { 
+  color: white; 
+  font: bold 72px Helvetica, Sans-Serif; 
+  letter-spacing: 2px;  
+  padding: 10px; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
 
 
 .thinline {
@@ -24,5 +46,6 @@ code {
  margin-top: 20px;
  margin-bottom: 20px;
 }
+
 
 

@@ -1,12 +1,7 @@
 import React from "react";
 
 import "./App.css";
-import BackgroundImage from "../1_BgImage";
-=======
-
 import "./App.css";
-
-
 
 
 function App() {
@@ -17,6 +12,8 @@ function App() {
    
 
     <div className="App">
+
+    <ImageText />
 
 
     </div>
