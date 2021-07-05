@@ -6,8 +6,7 @@ import Line from "../7_Line";
 function App() {
   return (
     <div className="App">
-    
-      
+
     </div>
   );
 }
