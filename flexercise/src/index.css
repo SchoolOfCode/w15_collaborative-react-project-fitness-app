@@ -26,6 +26,7 @@ code {
  width: 100%; 
 }
 
+
 .imageText span { 
   color: white; 
   font: bold 72px Helvetica, Sans-Serif; 
@@ -34,6 +35,17 @@ code {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
-/* End of exercise pictures with text */
+
+
+.thinline {
+ 
+ background-color: black;
+ max-width: 1500px;
+ height: 1px;
+ margin: auto;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+
 
 
