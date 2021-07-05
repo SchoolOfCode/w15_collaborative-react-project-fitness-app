@@ -3,7 +3,7 @@
 // To import to upper components add: <Logo /> */
 
 import React from "react";
-import Logo from "../App/pictures/logo.png"
+import Logo from "../../images/logo.png"
 
 
 function LogoImage() {
