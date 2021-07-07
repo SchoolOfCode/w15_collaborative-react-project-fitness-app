@@ -1,5 +1,6 @@
 html, body { 
   background-color: #232323;
+  color: white;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color:white;
   }
 
 code {
@@ -68,5 +70,6 @@ code {
   max-width: 100%;
   position: absolute;
 }
+
 /* end of */
 
