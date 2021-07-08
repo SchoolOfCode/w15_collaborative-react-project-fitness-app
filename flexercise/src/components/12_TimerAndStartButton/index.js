@@ -7,15 +7,6 @@ function Timer({ startTime = 0, onComplete }) {
   const [timer, setTimer] = useState(startTime);
   const [running, setRunning] = useState(false);
 
-  // useEffect(() => {
-  //     if (running) {
-  //       const interval = setInterval(() => {
-  //         setTimer(timer - 1);
-  //       }, 1000);
-  //       return () => clearInterval(interval);
-  //     }
-  //   }, [running]);
-  // console.log(timer, running)
 
   useEffect(() => {
     if (running) {
@@ -30,13 +21,13 @@ function Timer({ startTime = 0, onComplete }) {
   }, [running, timer]);
 
   return (
-    <div className="timer">
-      <h1>{`${Math.floor(timer / 60).toLocaleString("en-GB", {
+    <div className="timer-container">
+      <h1 className="timer-box">{`${Math.floor(timer / 60).toLocaleString("en-GB", {
         minimumIntegerDigits: 2,
       })}:${(timer % 60).toLocaleString("en-GB", {
         minimumIntegerDigits: 2,
       })}`}</h1>
-      <button onClick={() => setRunning(true)}>START</button>
+      <button className="my-button start" onClick={() => setRunning(true)}>START</button>
     </div>
   );
 }
