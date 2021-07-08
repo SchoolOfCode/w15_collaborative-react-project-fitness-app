@@ -9,7 +9,7 @@ const TimerPage = ({ onComplete, user }) => {
       <SmallLogo />
       <YoutubeEmbed embedId="9OfycnUL0h8?ecver=1&amp" />
       {/* change to 120 past testing */}
-      <Timer startTime={12} onComplete={onComplete} />
+      <Timer startTime={1} onComplete={onComplete} />
     </div>
   );
 };
