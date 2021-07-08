@@ -6,12 +6,13 @@ import React from "react";
 import Logo from "../../images/logo.png"
 
 
-function LogoImage() {
+function SmallLogo() {
     return (
-        <div className="logo">
+        <div>
             <img
                 src={Logo}
                 alt="logo"
+                className="small-logo"
                >
 
                 </img>
@@ -22,5 +23,5 @@ function LogoImage() {
 
 
 
-export default LogoImage;
+export default SmallLogo;
 
