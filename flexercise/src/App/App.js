@@ -3,6 +3,7 @@ import Homepage from "../pages/Homepage/index";
 import Explanation from "../pages/Explanation/index";
 import ExerciseSelection from "../pages/ExerciseSelection";
 import TimerPage from "../pages/TimerPage";
+import InputPage from "../pages/InputAmount"
 import "./App.css";
 
 function App() {
@@ -36,6 +37,12 @@ function App() {
           user={user}
           onComplete={() => setCurrentPage("inputpage")}
         ></TimerPage>
+      );
+      case "inputpage":
+      return (
+        <InputPage
+          onComplete={() => setCurrentPage("motivation")}
+        />
       );
   }
 }
