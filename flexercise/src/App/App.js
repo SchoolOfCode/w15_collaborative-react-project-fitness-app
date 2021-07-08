@@ -4,9 +4,11 @@ import Explanation from "../pages/Explanation/index";
 import ExerciseSelection from "../pages/ExerciseSelection";
 import TimerPage from "../pages/TimerPage";
 import InputPage from "../pages/InputAmount"
+import MotivationPage from "../pages/Motivation"
 import "./App.css";
 
 function App() {
+  
   const [currentPage, setCurrentPage] = useState("homepage");
   const [user, setUser] = useState({});
   console.log(user);
@@ -44,7 +46,14 @@ function App() {
           onComplete={() => setCurrentPage("motivation")}
         />
       );
+      case "motivation":
+      return (
+        <MotivationPage 
+          onComplete={() => setCurrentPage("leaderboard")}
+        />
+      );
   }
 }
 
 export default App;
+
