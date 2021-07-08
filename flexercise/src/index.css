@@ -132,3 +132,13 @@ code {
   border-radius: 0%;
   font-size: 1.5em;
 }
+/* Motivational Page */
+
+.motivation-picture {
+  width: 600px;
+}
+
+.motivational-text {
+  color: royalblue;
+  
+}
