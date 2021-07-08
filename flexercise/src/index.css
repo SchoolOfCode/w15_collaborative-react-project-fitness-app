@@ -73,7 +73,7 @@ code {
 
 /* end of */
 
-.myButton {
+.my-button {
 	box-shadow: 0px 1px 0px 0px #fff6af;
 	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
 	background-color:#ffec64;
@@ -89,12 +89,18 @@ code {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffee66;
 }
-.myButton:hover {
+.my-button:hover {
 	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
 	background-color:#ffab23;
 }
-.myButton:active {
+.my-button:active {
 	position:relative;
 	top:1px;
 }
 
+/* Explanation Page */
+
+.explanation-background {
+  background-color: #F5F5F5;
+  color: #232323;
+}
