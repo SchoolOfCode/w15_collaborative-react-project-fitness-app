@@ -1,58 +1,70 @@
-html, body { 
+html,
+body {
   background-color: #232323;
   color: white;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color:white;
-  }
+  color: white;
+  display: flex;
+  justify-content: center;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-    
+}
+
+.small-logo {
+  width: 250px;
+}
+
+/* Exercise Selection Page */
+
+
+
+.exercise-images {
+  display: flex;
 }
 
 /* Exercise Pictures with text over */
-.exerciseImage { 
-  position: relative; 
-  width: 100%; 
+.exerciseImage {
+  position: relative;
+  width: 100%;
+  margin: 20px;
 }
 
-.imageText { 
- position: absolute; 
- top: 150px; 
- left: 0; 
- width: 100%; 
+.imageText {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
-
-.imageText span { 
-  color: white; 
-  font: bold 72px Helvetica, Sans-Serif; 
-  letter-spacing: 2px;  
-  padding: 10px; 
+.imageText span {
+  color: white;
+  font: bold 72px Helvetica, Sans-Serif;
+  letter-spacing: 2px;
+  padding: 10px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
-
 .thinline {
- 
- background-color: black;
- max-width: 1500px;
- height: 1px;
- margin: auto;
- margin-top: 20px;
- margin-bottom: 20px;
+  background-color: black;
+  max-width: 1500px;
+  height: 1px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
 
 /* video CSS */
 
@@ -74,33 +86,34 @@ code {
 /* end of */
 
 .my-button {
-	box-shadow: 0px 1px 0px 0px #fff6af;
-	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	background-color:#ffec64;
-	border-radius:6px;
-	border:1px solid #ffaa22;
-	display:inline-block;
-	cursor:pointer;
-	color:#333333;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffee66;
+  box-shadow: 0px 1px 0px 0px #fff6af;
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color: #ffec64;
+  border-radius: 6px;
+  border: 1px solid #ffaa22;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
 }
 .my-button:hover {
-	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-	background-color:#ffab23;
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color: #ffab23;
 }
 .my-button:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
 /* Explanation Page */
 
 .explanation-background {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   color: #232323;
 }
+

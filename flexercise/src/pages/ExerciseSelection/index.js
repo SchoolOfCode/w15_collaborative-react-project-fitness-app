@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LogoImage from "../../components/2_Logo";
+import SmallLogo from "../../components/0_SmallLogo";
 import TextBox from "../../components/4_TextBox";
 import Input from "../../components/9_InputBox";
 import HeadingText from "../../components/6_HeadingText";
@@ -10,35 +10,40 @@ import Plank from "../../images/plank2.jpg";
 
 const ExerciseSelection = ({ onComplete }) => {
   const exercises = [
+   
     {
-      type: "squat",
-      source: Squat,
-    },
-    {
-      type: "situp",
+      type: "Sit Ups",
       source: Situp,
     },
     {
-      type: "plank",
+      type: "Plank",
       source: Plank,
+    },
+    {
+      type: "Squats",
+      source: Squat,
     },
   ];
 
   const [name, setName] = useState("")
 
   return (
-    <div>
-      <LogoImage />
-      <Input text={name} onChange={(value) => setName(value)} />
+    <div className="exercise-selection">
+      <SmallLogo />
+      <Input placeholder="Enter Name" text={name} onChange={(value) => setName(value)} />
       <HeadingText />
+      <h1>Select Exercise</h1>
+      <div className="exercise-images">
       {exercises.map((exercise) => (
         <ImageText
           onClick={() => onComplete(name, exercise.type)}
           image={exercise.source}
           name={exercise.type}
           key={exercise.type}
+          
         />
       ))}
+      </div>
     </div>
   );
 };
