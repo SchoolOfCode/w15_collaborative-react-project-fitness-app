@@ -1,5 +1,6 @@
 import React from "react";
 import TextBox from "../../components/4_TextBox";
+import Line from "../../components/7_Line"
 
 const Explanation = ({onComplete}) => {
     return ( 
@@ -7,6 +8,7 @@ const Explanation = ({onComplete}) => {
             <div className="explanation-background">
                 <h1>Exercise Challenge Overview</h1>  
                 <TextBox className="explanation-text" text="You are about to complete a short base test which will be used to create a daily workout challenge for you."/>
+                <Line />
                 <h1>Instructions</h1> 
                 <TextBox className="explanation-text" text="Enter Username"/>
                 <TextBox className="explanation-text" text="Pick Exercise"/>
