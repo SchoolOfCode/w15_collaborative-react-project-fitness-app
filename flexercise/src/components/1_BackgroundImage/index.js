@@ -1,11 +1,11 @@
 import React from "react";
-import Lunge from "../App/pictures/Lunge.png";
+import Lunge from "../../images/Lunge.jpg";
 
 
 function BackgroundImage() {
     return (
         <div className="homepage">
-            <img id="homepage-background-img" src={Lunge} alt="image of a man lunging" />
+            <img id="homepage-background-img" src={Lunge} alt="man lunging" />
         </div>
     )
 }
