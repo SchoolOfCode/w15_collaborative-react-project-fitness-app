@@ -12,8 +12,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-  display: flex;
-  justify-content: center;
 }
 
 code {
@@ -26,8 +24,6 @@ code {
 }
 
 /* Exercise Selection Page */
-
-
 
 .exercise-images {
   display: flex;
@@ -66,24 +62,9 @@ code {
   margin-bottom: 20px;
 }
 
-/* video CSS */
 
-.video-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-}
 
-.video-responsive iframe {
-  left: 0;
-  top: 0;
-  max-height: 100%;
-  max-width: 100%;
-  position: absolute;
-}
 
-/* end of */
 
 .my-button {
   box-shadow: 0px 1px 0px 0px #fff6af;
@@ -117,3 +98,37 @@ code {
   color: #232323;
 }
 
+/* Timer Page */
+
+/* video CSS */
+
+.video-responsive {
+
+  margin-bottom: 20px;
+}
+
+.video-responsive iframe {
+
+  max-width: 600px;
+  max-height: 400px;
+
+}
+.timer-container {
+  display: flex;
+  max-height: 200px;
+}
+.timer-box {
+  background-color: #e5e5e5;
+  font-size: 120px;
+  color: black;
+  max-width: 700px;
+  height: 200px;
+  text-align: center;
+  align-self: center;
+  
+}
+
+.start {
+  border-radius: 0%;
+  font-size: 1.5em;
+}
