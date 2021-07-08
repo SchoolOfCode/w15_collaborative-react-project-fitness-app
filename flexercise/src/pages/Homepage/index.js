@@ -7,7 +7,7 @@ const Homepage = ({ onComplete }) => {
     <div>
       
       <LogoImage />
-      <button className="myButton" onClick={onComplete}>TRY A 2 MINUTE CHALLENGE NOW</button>
+      <button className="my-button" onClick={onComplete}>TRY A 2 MINUTE CHALLENGE NOW</button>
     </div>
   );
 };
