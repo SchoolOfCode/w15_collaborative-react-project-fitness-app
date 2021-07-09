@@ -2,7 +2,7 @@ import React from "react";
 
 // motivational quote and image will be sourced from an array using array methods depending on range of user exercise amount input
 
-function MotivationalQuote({text}) {
+function MotivationalQuote({ text }) {
   return (
     <div className="motivational">
       <div className="motivational-image-container">

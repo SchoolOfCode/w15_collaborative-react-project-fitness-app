@@ -17,10 +17,6 @@ const Leaderboard = () => {
     updateResults();
   }, [updateResults]);
 
-  function refreshTable() {
-    updateResults();
-  }
-
   return (
     <div className="leaderboard">
       <h1>Leaderboard</h1>

@@ -5,7 +5,7 @@ import React from "react";
 function MotivationalQuote() {
     return (
         <div>
-            <img id="motivational-quote-image" src={ } />
+            <img id="motivational-quote-image" src={ } alt="" />
             <p>{text}</p>
         </div>
     )

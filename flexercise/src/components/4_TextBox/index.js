@@ -11,7 +11,7 @@ import React from "react";
 function TextBox({ text }) {
   return (
     <div>
-    <p>{text}</p>
+      <p>{text}</p>
     </div>
   );
 }

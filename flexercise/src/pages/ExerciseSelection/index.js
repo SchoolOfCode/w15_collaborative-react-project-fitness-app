@@ -18,12 +18,12 @@ const ExerciseSelection = ({ onComplete }) => {
     {
       type: "Plank",
       source: Plank,
-      disabled: true
+      disabled: true,
     },
     {
       type: "Squats",
       source: Squat,
-      disabled: true
+      disabled: true,
     },
   ];
 
@@ -31,7 +31,7 @@ const ExerciseSelection = ({ onComplete }) => {
   const [seeds, setSeeds] = useState("micah");
 
   return (
-    <div className="exercise-selection">
+    <div className="page-div">
       <SmallLogo />
 
       <div>
@@ -45,7 +45,11 @@ const ExerciseSelection = ({ onComplete }) => {
           text={name}
           onChange={(value) => setName(value)}
         />
-        <select onChange={(e) => setSeeds(e.target.value)} id="seeds" name="seed">
+        <select
+          onChange={(e) => setSeeds(e.target.value)}
+          id="seeds"
+          name="seed"
+        >
           <optgroup label="Select">
             <option value="micah">Micah</option>
             <option value="human">Human</option>

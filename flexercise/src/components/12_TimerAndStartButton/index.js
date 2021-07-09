@@ -7,7 +7,6 @@ function Timer({ startTime = 0, onComplete }) {
   const [timer, setTimer] = useState(startTime);
   const [running, setRunning] = useState(false);
 
-
   useEffect(() => {
     if (running) {
       if (timer === 0) {
@@ -22,12 +21,17 @@ function Timer({ startTime = 0, onComplete }) {
 
   return (
     <div className="timer-container">
-      <h1 className="timer-box">{`${Math.floor(timer / 60).toLocaleString("en-GB", {
-        minimumIntegerDigits: 2,
-      })}:${(timer % 60).toLocaleString("en-GB", {
+      <h1 className="timer-box">{`${Math.floor(timer / 60).toLocaleString(
+        "en-GB",
+        {
+          minimumIntegerDigits: 2,
+        }
+      )}:${(timer % 60).toLocaleString("en-GB", {
         minimumIntegerDigits: 2,
       })}`}</h1>
-      <button className="my-button start" onClick={() => setRunning(true)}>START</button>
+      <button className="my-button start" onClick={() => setRunning(true)}>
+        START
+      </button>
     </div>
   );
 }
