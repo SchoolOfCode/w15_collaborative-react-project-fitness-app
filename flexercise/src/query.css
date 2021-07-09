@@ -1,0 +1,137 @@
+/* Exercise Pictures with text over */
+.exerciseImage {
+  position: relative;
+  width: 100%;
+}
+
+.imageText {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+}
+
+.small-logo {
+  width: 250px;
+}
+
+/* Exercise Selection Page */
+
+.exercise-images {
+  display: flex;
+}
+
+/* Exercise Pictures with text over */
+.exerciseImage {
+  position: relative;
+  width: 100%;
+  margin: 20px;
+}
+
+.imageText {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.imageText span {
+  color: white;
+  font: bold 72px Helvetica, Sans-Serif;
+  letter-spacing: 2px;
+  padding: 10px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.thinline {
+  background-color: black;
+  max-width: 1500px;
+  height: 1px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+/* Explanation Page */
+
+.explanation-background {
+  background-color: #f5f5f5;
+  color: #232323;
+}
+
+/* Timer Page */
+
+/* video CSS */
+
+.video-responsive {
+  margin-bottom: 20px;
+}
+
+.video-responsive iframe {
+  max-width: 600px;
+  max-height: 400px;
+}
+.timer-container {
+  display: flex;
+  max-height: 200px;
+}
+.timer-box {
+  background-color: #e5e5e5;
+  font-size: 120px;
+  color: black;
+  max-width: 700px;
+  height: 200px;
+  text-align: center;
+  align-self: center;
+}
+
+.start {
+  border-radius: 0%;
+  font-size: 1.5em;
+}
+/* Motivational Page */
+
+.motivation-picture {
+  width: 600px;
+}
+
+/* leaderboard */
+table {
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #f5f5f5;
+}
+
+td,
+th {
+  border-bottom: 1px solid #f2f2f2;
+  text-align: left;
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+#table-avatar {
+  width: 100px;
+  text-align: center;
+}
+
+.results-avatar {
+  width: 2.5vw;
+}
+
+#table-name {
+  width: 140px;
+}
+
+#table-score {
+  width: 100px;
+  text-align: center;
+}
+
+.motivational-text {
+  color: royalblue;
+}

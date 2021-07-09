@@ -7,7 +7,6 @@ import TimerPage from "../pages/TimerPage";
 import InputPage from "../pages/InputAmount";
 import MotivationPage from "../pages/Motivation";
 import LeaderboardPage from "../pages/LeaderboardPage";
-import "./App.css";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("homepage");
