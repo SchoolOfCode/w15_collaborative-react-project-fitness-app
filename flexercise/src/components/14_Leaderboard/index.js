@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Avatar from "../../components/14-2_Avatar";
 
 const TOKEN = "60a8e2c18f40bb64ec94690b";
 const URL = `https://www.dreamlo.com/lb/${TOKEN}/json`;
@@ -18,6 +19,7 @@ const Leaderboard = () => {
 
   return (
     <div className="leaderboard">
+      <Avatar />
       <h1>Leaderboard</h1>
       <table>
         {result.length > 0 ? (
@@ -26,7 +28,7 @@ const Leaderboard = () => {
               <tr>
                 <td id="table-avatar">
                   <img
-                    id="results-avatar"
+                    className="results-avatar"
                     src={`https://avatars.dicebear.com/api/${user.text}/${user.name}.svg`}
                     alt="avatar"
                   />
