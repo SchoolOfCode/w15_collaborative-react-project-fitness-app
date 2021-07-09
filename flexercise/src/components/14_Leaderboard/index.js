@@ -1,5 +1,4 @@
 import { useEffect, useState, useCallback } from "react";
-import Avatar from "../../components/14-2_Avatar";
 
 const TOKEN = "60a8e2c18f40bb64ec94690b";
 const URL = `https://www.dreamlo.com/lb/${TOKEN}/json`;
@@ -24,7 +23,6 @@ const Leaderboard = () => {
 
   return (
     <div className="leaderboard">
-      <Avatar onUserAdded={refreshTable} />
       <h1>Leaderboard</h1>
       <table>
         {result.length > 0 ? (

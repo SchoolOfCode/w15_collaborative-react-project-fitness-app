@@ -11,7 +11,6 @@ import Plank from "../../images/plank2.jpg";
 
 const ExerciseSelection = ({ onComplete }) => {
   const exercises = [
-   
     {
       type: "Sit Ups",
       source: Situp,
@@ -19,31 +18,61 @@ const ExerciseSelection = ({ onComplete }) => {
     {
       type: "Plank",
       source: Plank,
+      disabled: true
     },
     {
       type: "Squats",
       source: Squat,
+      disabled: true
     },
   ];
 
-  const [name, setName] = useState("")
+  const [name, setName] = useState("");
+  const [seeds, setSeeds] = useState("micah");
 
   return (
     <div className="exercise-selection">
       <SmallLogo />
-      <Input placeholder="Enter Name" text={name} onChange={(value) => setName(value)} />
+
+      <div>
+        <img
+          className="results-avatar"
+          src={`https://avatars.dicebear.com/api/${seeds}/${name}.svg`}
+          alt=""
+        />
+        <Input
+          placeholder="Enter Name"
+          text={name}
+          onChange={(value) => setName(value)}
+        />
+        <select onChange={(e) => setSeeds(e.target.value)} id="seeds" name="seed">
+          <optgroup label="Select">
+            <option value="micah">Micah</option>
+            <option value="human">Human</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="bottts">Bots</option>
+            <option value="avataaars">Avatars</option>
+            <option value="identicon">Identicon</option>
+            <option value="jdenticon">Jdenticon</option>
+            <option value="gridy">Gridy</option>
+            <option value="initials">Initials</option>
+          </optgroup>
+        </select>
+      </div>
+
       <HeadingText />
       <h1>Select Exercise</h1>
       <div className="exercise-images">
-      {exercises.map((exercise) => (
-        <ImageText
-          onClick={() => onComplete(name, exercise.type)}
-          image={exercise.source}
-          name={exercise.type}
-          key={exercise.type}
-          
-        />
-      ))}
+        {exercises.map((exercise) => (
+          <ImageText
+            onClick={() => onComplete(name, seeds, exercise)}
+            image={exercise.source}
+            name={exercise.type}
+            key={exercise.type}
+            disabled={exercise.disabled}
+          />
+        ))}
       </div>
     </div>
   );

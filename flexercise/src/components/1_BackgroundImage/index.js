@@ -1,7 +1,6 @@
 import React from "react";
 import Lunge from "../../images/Lunge.jpg";
 
-
 function BackgroundImage() {
     return (
         <div className="homepage">

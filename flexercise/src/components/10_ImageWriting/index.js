@@ -3,10 +3,10 @@
 
 import React from "react";
 
-function ImageText({image, name, onClick}) {
+function ImageText({image, name, onClick, disabled}) {
   return (
-    <div className="exerciseChoice" onClick={onClick}>
-      <div className="exerciseImage">
+    <div className="exerciseChoice" onClick={!disabled ? onClick : null}>
+      <div className={`exerciseImage ${disabled ? 'disabled' : null}`}>
         <img
           src={image}
           alt={name}
