@@ -8,12 +8,12 @@ Exercise Selection Page
 
 import React from "react";
 
-function TextBox({text}) {
-    return (
-        <div>
-            <p>{text}</p>
-        </div>
-    )
+function TextBox({ text }) {
+  return (
+    <div>
+    <p>{text}</p>
+    </div>
+  );
 }
 
 export default TextBox;

@@ -19,7 +19,7 @@ code {
 }
 
 /* PAGES */
-.homepage-div {
+.page-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,12 +51,18 @@ code {
 
 #slogan-flexercise {
   text-transform: uppercase;
-  margin: 0 0 50px 0;
   color: #f9ed32;
+  margin: 0;
+}
+
+/* EXPLANATION PAGE */
+.explanation-background {
+  background-color: #f5f5f5ce;
+  color: #232323;
+  padding: 10px 30px;
 }
 
 /* BUTTON */
-
 .my-button {
   box-shadow: 0px 1px 0px 0px #fff6af;
   background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
@@ -72,6 +78,7 @@ code {
   padding: 6px 24px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffee66;
+  margin-top: 50px;
 }
 
 .my-button:hover {
