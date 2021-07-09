@@ -1,5 +1,6 @@
 import React from "react";
-import Leaderboard from "../../components/14_Leaderboard"
+import Leaderboard from "../../components/14_Leaderboard" ;
+// import {Leaderboard} from "../../components/14_Leaderboard"
 
 const Homepage = ({onComplete}) => {
     return ( 

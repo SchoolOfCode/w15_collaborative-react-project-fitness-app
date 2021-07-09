@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import LogoImage from "../../components/2_Logo";
-import TextBox from "../../components/4_TextBox";
 import Input from "../../components/9_InputBox";
 import HeadingText from "../../components/6_HeadingText";
 import ImageText from "../../components/10_ImageWriting";

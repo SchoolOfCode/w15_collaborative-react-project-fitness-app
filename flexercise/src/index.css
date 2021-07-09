@@ -1,6 +1,3 @@
-html, body { 
-  background-color: #232323;
-}
 
 body {
   margin: 0;
@@ -70,3 +67,7 @@ code {
 }
 /* end of */
 
+/* leaderboard */
+.results-avatar {
+  width: 50px;
+}

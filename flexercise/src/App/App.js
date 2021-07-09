@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import React, { useState } from "react";
 import Homepage from "../pages/Homepage/index";
 import Explanation from "../pages/Explanation/index";
@@ -24,7 +25,7 @@ function App() {
                 ...user, 
                 name, exercise
               }
-            )
+            ) 
             // setCurrentPage("exerciseselection")
            
             
