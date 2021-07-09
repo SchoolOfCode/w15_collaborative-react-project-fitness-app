@@ -7,13 +7,9 @@ function ImageText({ image, name, onClick, disabled }) {
   return (
     <div className="exerciseChoice" onClick={!disabled ? onClick : null}>
       <div className={`exerciseImage ${disabled ? "disabled" : null}`}>
-        <img
+        <img className="select-img"
           src={image}
           alt={name}
-          style={{
-            width: "400px",
-            height: "400px",
-          }}
         />
         <h2 className="imageText">
           <span>{name}</span>

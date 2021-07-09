@@ -8,6 +8,7 @@ import React from "react";
 function Input({ text, onChange, placeholder }) {
   return (
     <input
+      className="input-text"
       type="text"
       placeholder={placeholder}
       value={text}

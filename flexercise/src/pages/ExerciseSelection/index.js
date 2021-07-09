@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import LogoImage from "../../components/2_Logo";
 import SmallLogo from "../../components/0_SmallLogo";
-import TextBox from "../../components/4_TextBox";
 import Input from "../../components/9_InputBox";
 import HeadingText from "../../components/6_HeadingText";
 import ImageText from "../../components/10_ImageWriting";
@@ -34,9 +32,9 @@ const ExerciseSelection = ({ onComplete }) => {
     <div className="page-div">
       <SmallLogo />
 
-      <div>
+      <div className="nameinput-div">
         <img
-          className="results-avatar"
+          className="choose-avatar"
           src={`https://avatars.dicebear.com/api/${seeds}/${name}.svg`}
           alt=""
         />
@@ -46,6 +44,7 @@ const ExerciseSelection = ({ onComplete }) => {
           onChange={(value) => setName(value)}
         />
         <select
+          className="select-seed"
           onChange={(e) => setSeeds(e.target.value)}
           id="seeds"
           name="seed"

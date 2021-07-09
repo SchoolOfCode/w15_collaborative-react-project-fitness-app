@@ -15,44 +15,7 @@
   width: 250px;
 }
 
-/* Exercise Selection Page */
 
-.exercise-images {
-  display: flex;
-}
-
-/* Exercise Pictures with text over */
-.exerciseImage {
-  position: relative;
-  width: 100%;
-  margin: 20px;
-}
-
-.imageText {
-  position: absolute;
-  top: 150px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.imageText span {
-  color: white;
-  font: bold 72px Helvetica, Sans-Serif;
-  letter-spacing: 2px;
-  padding: 10px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
-
-.thinline {
-  background-color: black;
-  max-width: 1500px;
-  height: 1px;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
 
 
