@@ -1,5 +1,5 @@
 import React from "react";
-import Lunge from "../App/pictures/Lunge.png";
+import Lunge from "../../images/Lunge.jpg";
 
 
 function BackgroundImage() {

@@ -5,9 +5,9 @@
 
 import React from "react";
 
-function Input({ text, onChange }) {
+function Input({ text, onChange, placeholder }) {
   
-  return <input type="text" value={text} onChange={(e)=>onChange(e.target.value)} />;
+  return <input type="text" placeholder={placeholder} value={text} onChange={(e)=>onChange(e.target.value)} />;
 
 
 }

@@ -3,12 +3,16 @@ import React, { useState } from "react";
 import Homepage from "../pages/Homepage/index";
 import Explanation from "../pages/Explanation/index";
 import ExerciseSelection from "../pages/ExerciseSelection";
+import TimerPage from "../pages/TimerPage";
+import InputPage from "../pages/InputAmount"
+import MotivationPage from "../pages/Motivation"
 import "./App.css";
 
 function App() {
+  
   const [currentPage, setCurrentPage] = useState("homepage");
-  const [user, setUser] = useState ({})
-  console.log(user)
+  const [user, setUser] = useState({});
+  console.log(user);
   switch (currentPage) {
     case "homepage":
       return <Homepage onComplete={() => setCurrentPage("explanation")} />;
@@ -20,21 +24,37 @@ function App() {
       return (
         <ExerciseSelection
           onComplete={(name, exercise) => {
-            setUser(
-              {
-                ...user, 
-                name, exercise
-              }
-            ) 
-            // setCurrentPage("exerciseselection")
-           
-            
-            }
-          }
-          
+            setUser({
+              ...user,
+              name,
+              exercise,
+            });
+
+            setCurrentPage("timer");
+          }}
+        />
+      );
+    case "timer":
+      return (
+        <TimerPage
+          user={user}
+          onComplete={() => setCurrentPage("inputpage")}
+        ></TimerPage>
+      );
+      case "inputpage":
+      return (
+        <InputPage
+          onComplete={() => setCurrentPage("motivation")}
+        />
+      );
+      case "motivation":
+      return (
+        <MotivationPage 
+          onComplete={() => setCurrentPage("leaderboard")}
         />
       );
   }
 }
 
 export default App;
+
