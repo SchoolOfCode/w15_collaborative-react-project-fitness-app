@@ -1,5 +1,4 @@
-// This adds the Squat picture with the word Squat over it. Styling in index.css
-// When we add more images we will need to amend this to be dynamic by using objects and map function but not needed in MVP
+// This adds the an image box with writing over the top of it. The disabled tag allows us to make it unclickable and we can style them so user knows they are not avaliable. 
 
 import React from "react";
 
