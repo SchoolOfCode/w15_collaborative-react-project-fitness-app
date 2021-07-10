@@ -254,7 +254,7 @@ input::selection {
 
 .leaderboard {
   height: 600px;
-  overflow: scroll;
+  overflow-y: hidden;
 }
 
 table {
