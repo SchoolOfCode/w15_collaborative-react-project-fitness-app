@@ -1,11 +1,12 @@
 // A component to add H1 heading text
-// To import to upper component add to top of screen - import HeadingText from "../6_HeadingText";
+
 // Examples of what to write in the return function:
 //** Explanation Page **
 // <HeadingText heading="Exercise Challenge Overview"/>
 // <HeadingText heading="Instructions"/>
-// ** Exercise Selection Page **
-//<HeadingText heading="Select Exercise"/>
+
+// This component is actually unnecessary as its easier to write <H1> tags
+
 
 import React from "react";
 
