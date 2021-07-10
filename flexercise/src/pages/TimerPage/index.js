@@ -3,7 +3,8 @@ import Timer from "../../components/12_TimerAndStartButton";
 import SmallLogo from "../../components/0_SmallLogo";
 import YoutubeEmbed from "../../components/11_Video";
 
-// This page shows the video of how to do a Squat and Displays the timer
+// This page shows the video of how to do a Squat and displays the timer
+// It takes the user object in which will change what video/timer is displayed in future iterations. 
 const TimerPage = ({ onComplete, user }) => {
   return (
     <div className="page-div">
