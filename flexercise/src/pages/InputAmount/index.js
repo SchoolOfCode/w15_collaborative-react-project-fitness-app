@@ -9,7 +9,7 @@ const InputPage = ({ onComplete, name, seeds }) => {
   const PRIVATE = "3XrM-f9kdUeAuuv95QrE8Aal7MEJy5UUGMfgoBYZMR4A";
   
   async function addPlayer() {
-    const addURL = `https://www.dreamlo.com/lb/${PRIVATE}/add/${name || 'Anonymous'}/${amount}/120/${seeds}`;
+    const addURL = `https://www.dreamlo.com/lb/${PRIVATE}/add/${name || 'Anonymous'}/${amount || '0'}/120/${seeds || 'micah'}`;
     await fetch(addURL);
 
     onComplete(amount)
