@@ -1,3 +1,17 @@
+@media screen and (max-width: 1000px) {
+ 
+/* BACKGROUND  */
+.homepage-div {
+  background-image: url("./images/Lunge.jpg");
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+  
+}
+
 @media only screen and (max-width: 600px) {
   .small-logo {
     width: 70px;
@@ -53,6 +67,14 @@
 
   .exercise-images {
     flex-direction: column;
+  }
+
+  .middle {
+    bottom: 40px;
+  }
+
+  .text {
+    font-size: 30px;
   }
 
   .select-img {

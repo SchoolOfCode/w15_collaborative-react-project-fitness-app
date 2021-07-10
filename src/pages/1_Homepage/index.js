@@ -6,10 +6,10 @@ import LogoImage from "../../components/2_Logo";
 
 const Homepage = ({ onComplete }) => {
   return (
-    <div className="page-div">
+    <div className="page-div homepage-div">
       <LogoImage />
       <button className="my-button" onClick={onComplete}>
-        TRY A 2 MINUTE CHALLENGE NOW
+        TRY A 2 MINUTE <br /> CHALLENGE NOW
       </button>
     </div>
   );

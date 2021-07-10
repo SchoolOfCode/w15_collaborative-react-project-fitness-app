@@ -16,27 +16,27 @@ function App() {
   // This controls what page you are on. Once the button is clicked it will change to the next page.
   switch (currentPage) {
     case "homepage":
-      return <Homepage onComplete={() => setCurrentPage("explanation")} />;
+      // return <Homepage onComplete={() => setCurrentPage("explanation")} />;
     case "explanation":
-      return (
-        <Explanation onComplete={() => setCurrentPage("exerciseselection")} />
-      );
+      // return (
+        // <Explanation onComplete={() => setCurrentPage("exerciseselection")} />
+      // );
     case "exerciseselection":
       // This page stores the name and exercise selection into the user object
-      if (user.name !== undefined) setUser({});
-      return (
-        <ExerciseSelection
-          onComplete={(name, seeds, exercise) => {
-            setUser({
-              ...user,
-              name,
-              exercise,
-              seeds,
-            });
-            setCurrentPage("timer");
-          }}
-        />
-      );
+      // if (user.name !== undefined) setUser({});
+      // return (
+      //   <ExerciseSelection
+      //     onComplete={(name, seeds, exercise) => {
+      //       setUser({
+      //         ...user,
+      //         name,
+      //         exercise,
+      //         seeds,
+      //       });
+      //       setCurrentPage("timer");
+      //     }}
+      //   />
+      // );
     // This page will change to the next page once the timer start button is pressed and the time elasps
     case "timer":
       return (

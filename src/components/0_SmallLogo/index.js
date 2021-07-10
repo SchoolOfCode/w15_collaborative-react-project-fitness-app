@@ -8,8 +8,12 @@ const SmallLogo = () => {
   return (
     <div className="small-logo-div">
       <img src={Logo} alt="logo" className="small-logo"></img>
+      {/* Flexercise picture  */}
+      <h1 id="title-flexercise">FLEXERCISE</h1>
+      {/* Flexercise slogan */}
+      <h3 id="slogan-flexercise">Fitness Made Fun</h3>
     </div>
   );
-}
+};
 
 export default SmallLogo;

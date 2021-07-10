@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 html,
 body {
   background-color: #232323;
@@ -36,9 +38,27 @@ code {
   align-items: center;
 }
 
+/* SMALL LOGO  */
+
 .small-logo {
   width: 100px;
+  margin-bottom: 2px;
+}
+
+.small-logo-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
+}
+
+.small-logo-div > #title-flexercise {
+  font-size: 40px;
+}
+
+.small-logo-div > #slogan-flexercise {
+  font-size: 12px;
 }
 
 /* LOGO */
@@ -58,20 +78,25 @@ code {
 
 #slogan-flexercise {
   text-transform: uppercase;
+  background: -webkit-linear-gradient(#fbb040, #f9ed32);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: #f9ed32;
+  font-weight: 750;
   margin: 0;
-  font-size: 1em;
-  letter-spacing: 2px;
+  font-size: 1.2em;
+  letter-spacing: 3px;
   word-spacing: 5px;
 }
 
 /* EXPLANATION PAGE */
 
 .explanation-background {
-  background-color: #f5f5f5ce;
+  background-color: #f5f5f5;
   color: #232323;
   padding: 10px 30px;
   border-radius: 10px;
+  width: 500px;
 }
 
 .thinline {
@@ -79,6 +104,11 @@ code {
 }
 
 /* EXERCISE SELECT PAGE */
+
+.page-div > .small-logo-div {
+  margin-top: -50px;
+  margin-bottom: 80px;
+}
 
 .choose-avatar {
   width: 70px;
@@ -97,12 +127,19 @@ code {
 
 .input-text {
   width: 250px;
+  height: 20px;
   border-radius: 10px;
   padding: 10px;
   margin: 0 10px;
-  background-color: #333;
-  color: white;
+  background-color: #f5f5f5;
+  color: black;
   border: solid 1px #f5f5f51a;
+}
+
+.input-text::placeholder {
+  color: black;
+  font-weight: bold;
+  text-align: center;
 }
 
 .input-text:focus,
@@ -124,7 +161,7 @@ input::selection {
 }
 
 .select-seed {
-  padding: 8px;
+  padding: 12px;
   border-radius: 10px;
   background-color: #333;
   color: white;
@@ -132,10 +169,19 @@ input::selection {
 }
 
 /* Exercise Pictures with text over */
+.disabled {
+  filter: grayscale(100%);
+  opacity: 0.3;
+}
+
+.disabled:hover {
+  all: none;
+}
 
 .exercise-images {
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
 }
 
 #choose-exercise {
@@ -145,7 +191,7 @@ input::selection {
 
 .select-img {
   width: 300px;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
   object-position: center;
   margin: 0 10px;
@@ -159,7 +205,7 @@ input::selection {
   transition: 0.5s ease;
   opacity: 1;
   position: absolute;
-  bottom: 50px;
+  bottom: 70px;
   left: 160px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -175,12 +221,11 @@ input::selection {
 }
 
 .text {
-  background-color: hsla(0, 0%, 20%, 0.61);
   border-radius: 5px;
-  -webkit-text-stroke: black 1px;
+  -webkit-text-stroke: black 2px;
+  font-weight: 800;
   color: #f5f5f5;
-  font-size: 30px;
-  text-transform: uppercase;
+  font-size: 40px;
   padding: 5px 10px;
 }
 
@@ -198,24 +243,28 @@ input::selection {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 150px;
   width: 592px;
   background-color: #e5e5e5;
-  border: #e5e5e5 4px solid;
 }
 
 .timer-box {
-  background-color: #e5e5e5;
-  font-size: 120px;
-  color: black;
+  display: flex;
+  font-size: 100px;
+  font-family: "Orbitron";
+  color: #232323;
   height: 150px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 #start {
   border-radius: 0%;
   border: none;
   font-size: 1.5em;
+  font-weight: 900;
   height: 150px;
   margin: 0 0 0 10px;
 }
@@ -242,10 +291,17 @@ input::selection {
   font-family: Arial;
   font-size: 15px;
   font-weight: bold;
-  padding: 6px 24px;
+  padding: 10px 24px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffee66;
   margin-top: 50px;
+}
+
+.homepage-div > button {
+  padding: 15px 60px;
+  border-radius: 15px;
+  font-weight: 800;
+  line-height: 18px;
 }
 
 .my-button:hover {
