@@ -1,11 +1,11 @@
 // This adds the squat video player
 // To import write - import YoutubeEmbed from "../11_Video";
-//In the return function write - <YoutubeEmbed embedId="9OfycnUL0h8?ecver=1&amp" />
+// In the return function write - <YoutubeEmbed embedId="9OfycnUL0h8?ecver=1&amp" />
 // The embedId will need to be changed if you want to add different videos.
 // Video from - https://www.youtube.com/watch?v=9OfycnUL0h8
-//Code from here:
-//https://dev.to/bravemaster619/simplest-way-to-embed-a-youtube-video-in-your-react-app-3bk2
-//
+// Code from here:
+// https://dev.to/bravemaster619/simplest-way-to-embed-a-youtube-video-in-your-react-app-3bk2
+
 
 import React from "react";
 import PropTypes from "prop-types";
