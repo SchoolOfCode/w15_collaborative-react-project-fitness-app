@@ -19,7 +19,6 @@ const Leaderboard = () => {
 
   return (
     <div className="leaderboard">
-      <h1>Leaderboard</h1>
       <table>
         {result.length > 0 ? (
           result.map((user) => {

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import SmallLogo from "../../components/0_SmallLogo";
 import TextBox from "../../components/4_TextBox";
 import Input from "../../components/9_InputBox";
-import HeadingText from "../../components/6_HeadingText";
 
 const InputPage = ({ onComplete, name, seeds }) => {
   const [amount, setAmount] = useState("");
@@ -17,7 +16,7 @@ const InputPage = ({ onComplete, name, seeds }) => {
   }
 
   return (
-    <div className="input-amount">
+    <div className="page-div">
       <SmallLogo />
       <TextBox className="rep-amount" text="How many reps did you do?" />
       <Input
@@ -25,8 +24,7 @@ const InputPage = ({ onComplete, name, seeds }) => {
         text={amount}
         onChange={(value) => setAmount(value)}
       />
-      <HeadingText />
-      <button className="my-button" onClick={addPlayer}>
+      <button className="my-button" id="submit-button" onClick={addPlayer}>
         Submit
       </button>
     </div>

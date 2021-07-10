@@ -1,10 +1,14 @@
 import Leaderboard from "../../components/14_Leaderboard";
+import HeadingText from "../../components/6_HeadingText";
 
-const LeaderboardPage = ({onComplete}) => {
+const LeaderboardPage = ({ onComplete }) => {
   return (
-    <div>
+    <div className="page-div">
+      <HeadingText heading="Leaderboard" />
       <Leaderboard />
-      <button className="my-button" onClick={onComplete}>Finished</button>
+      <button className="my-button" onClick={onComplete}>
+        Finished
+      </button>
     </div>
   );
 };
