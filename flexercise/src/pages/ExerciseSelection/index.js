@@ -7,7 +7,9 @@ import Squat from "../../images/Squat.jpg";
 import Situp from "../../images/situp.jpg";
 import Plank from "../../images/plank2.jpg";
 
+// This page allows the user to enter their name and select what exercise they will do
 const ExerciseSelection = ({ onComplete }) => {
+// This is an object that allows us to add more exercises for the user to select
   const exercises = [
     {
       type: "Squats",
@@ -25,7 +27,9 @@ const ExerciseSelection = ({ onComplete }) => {
     },
   ];
 
+// This stores the user name with the initial value blank
   const [name, setName] = useState("");
+// This sets the avatar picture to be an initial value of the picture micah
   const [seeds, setSeeds] = useState("micah");
 
   return (
@@ -33,16 +37,20 @@ const ExerciseSelection = ({ onComplete }) => {
       <SmallLogo />
 
       <div className="nameinput-div">
+// This sets the avatar to the inital value
         <img
           className="choose-avatar"
           src={`https://avatars.dicebear.com/api/${seeds}/${name}.svg`}
           alt=""
         />
+// This allows the user to enter their name, on change it will set the value of the name in the user object 
         <Input
           placeholder="Enter Name"
           text={name}
           onChange={(value) => setName(value)}
         />
+// This allows the user to change their Avatar and update the value in the user object
+
         <select
           className="select-seed"
           onChange={(e) => setSeeds(e.target.value)}
@@ -66,6 +74,12 @@ const ExerciseSelection = ({ onComplete }) => {
 
       <HeadingText />
       <h1>Select Exercise</h1>
+
+// This maps the images from the exercise object above onto the page, allowing several options. 
+// It also allows the user to select which exercise they will do and add this to the user object.
+// A value of disabled was added as on the first iteration we will only be allowing the user to select squats.
+// onComplete changes to the next page when a selection is made. 
+
       <div className="exercise-images">
         {exercises.map((exercise) => (
           <ImageText
