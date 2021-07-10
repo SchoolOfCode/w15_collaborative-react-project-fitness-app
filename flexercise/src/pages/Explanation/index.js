@@ -2,7 +2,7 @@ import React from "react";
 import TextBox from "../../components/4_TextBox";
 import Line from "../../components/7_Line";
 
-// This page explains to the user what they will be doing. 
+// This page explains to the user how they can use the App. 
 const Explanation = ({ onComplete }) => {
   return (
     <div className="page-div">
