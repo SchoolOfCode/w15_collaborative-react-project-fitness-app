@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 // If start time doesnt get passed in it sets to 0 (default value) this will be useful for reuse of timer if it is counting up such as for the plank option
 
-function Timer({ startTime = 0, onComplete }) {
+const Timer = ({ startTime = 0, onComplete }) => {
   const [timer, setTimer] = useState(startTime);
   const [running, setRunning] = useState(false);
 
@@ -42,6 +42,6 @@ function Timer({ startTime = 0, onComplete }) {
       </button>
     </div>
   );
-}
+};
 
 export default Timer;

@@ -7,7 +7,7 @@ import Sunrise from "../../images/sunrise.png";
 //In next iteration, the image and text will change depending on the amount of reps the user does.
 const MotivationPage = ({ onComplete }) => {
   return (
-    <div className="page-div">
+    <div className="page-div motivation-div">
       <SmallLogo />
 
       {/* Motivational Image  */}

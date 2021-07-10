@@ -36,6 +36,11 @@ code {
   align-items: center;
 }
 
+.small-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
 /* LOGO */
 
 .logo-img {
@@ -55,6 +60,9 @@ code {
   text-transform: uppercase;
   color: #f9ed32;
   margin: 0;
+  font-size: 1em;
+  letter-spacing: 2px;
+  word-spacing: 5px;
 }
 
 /* EXPLANATION PAGE */
@@ -64,6 +72,10 @@ code {
   color: #232323;
   padding: 10px 30px;
   border-radius: 10px;
+}
+
+.thinline {
+  border-bottom: #fbb040 1px solid;
 }
 
 /* EXERCISE SELECT PAGE */

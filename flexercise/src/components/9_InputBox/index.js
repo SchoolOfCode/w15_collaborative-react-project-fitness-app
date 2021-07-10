@@ -1,9 +1,8 @@
 // This adds an input text box that changes the value on change
 
-
 import React from "react";
 
-function Input({ text, onChange, placeholder }) {
+const Input = ({ text, onChange, placeholder }) => {
   return (
     <input
       className="input-text"
@@ -13,6 +12,6 @@ function Input({ text, onChange, placeholder }) {
       onChange={(e) => onChange(e.target.value)}
     />
   );
-}
+};
 
 export default Input;

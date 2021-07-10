@@ -33,7 +33,7 @@ const ExerciseSelection = ({ onComplete }) => {
   const [seeds, setSeeds] = useState("micah");
 
   return (
-    <div className="page-div">
+    <div className="page-div selection-div">
       <SmallLogo />
 
       <div className="nameinput-div">

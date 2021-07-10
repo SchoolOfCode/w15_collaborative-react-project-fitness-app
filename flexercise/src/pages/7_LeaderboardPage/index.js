@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Leaderboard from "../../components/14_Leaderboard";
 import HeadingText from "../../components/6_HeadingText";
 

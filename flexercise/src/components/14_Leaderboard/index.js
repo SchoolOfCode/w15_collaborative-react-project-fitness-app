@@ -44,7 +44,6 @@ const Leaderboard = () => {
             );
           })
         ) : (
-          // clean up for fetching API data
           <p>Loading...</p>
         )}
       </table>

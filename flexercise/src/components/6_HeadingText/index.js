@@ -7,15 +7,14 @@
 
 // This component is actually unnecessary as its easier to write <H1> tags
 
-
 import React from "react";
 
-function HeadingText({ heading }) {
+const HeadingText = ({ heading }) => {
   return (
     <div>
       <h1>{heading}</h1>
     </div>
   );
-}
+};
 
 export default HeadingText;
