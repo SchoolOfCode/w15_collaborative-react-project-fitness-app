@@ -1,3 +1,5 @@
+// This adds the background image for the Home Page
+
 import React from "react";
 import Lunge from "../../images/Lunge.jpg";
 
