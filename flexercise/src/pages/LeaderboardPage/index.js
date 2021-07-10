@@ -7,7 +7,7 @@ const LeaderboardPage = ({ onComplete }) => {
     <div className="page-div">
       <HeadingText heading="Leaderboard" />
       <Leaderboard />
-// On click of button go back to exercise selection page
+      {/* On click of button go back to exercise selection page */}
       <button className="my-button" onClick={onComplete}>
         Finished
       </button>
