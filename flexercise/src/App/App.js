@@ -1,4 +1,4 @@
-/* eslint-disable default-case */
+//import page components to the app
 import React, { useState } from "react";
 import Homepage from "../pages/Homepage/index";
 import Explanation from "../pages/Explanation/index";
@@ -9,21 +9,21 @@ import MotivationPage from "../pages/Motivation";
 import LeaderboardPage from "../pages/LeaderboardPage";
 
 function App() {
+// The first page it shows is the homepage
   const [currentPage, setCurrentPage] = useState("homepage");
+// Creates an inital value of an empty object to store our user information in as you go through the app
   const [user, setUser] = useState({});
-
+// This controls what page you are on. Once the button is clicked it will change to the next page. 
   switch (currentPage) {
     case "homepage":
       return <Homepage onComplete={() => setCurrentPage("explanation")} />;
-
     case "explanation":
       return (
         <Explanation onComplete={() => setCurrentPage("exerciseselection")} />
       );
-
     case "exerciseselection":
+// This page stores the name and exercise selection into the user object
       if (user.name !== undefined) setUser({});
-
       return (
         <ExerciseSelection
           onComplete={(name, seeds, exercise) => {
@@ -37,7 +37,7 @@ function App() {
           }}
         />
       );
-
+// This page will change to the next page once the timer start button is pressed and the time elasps 
     case "timer":
       return (
         <TimerPage
@@ -45,7 +45,7 @@ function App() {
           onComplete={() => setCurrentPage("inputpage")}
         ></TimerPage>
       );
-
+// This page adds the user input of amount of reps they completed into the user object and changes to next page on press of the button.
     case "inputpage":
       return (
         <InputPage
@@ -61,12 +61,12 @@ function App() {
           }}
         />
       );
-
+// This page shows the motivation page to the user and changes to leaderboard on click on press of the button.
     case "motivation":
       return (
         <MotivationPage onComplete={() => setCurrentPage("leaderboard")} />
       );
-
+// This page will show the user the leaderboard and take the user back to the Exercise Selection page in case they want to use it again. 
     case "leaderboard":
       return (
         <LeaderboardPage
