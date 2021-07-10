@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 
-// if start time doesnt get passed in it sets to 0 (default value) this will be useful for reuse of timer if it is counting up such as for the plank option
-// cant usesetInterval as every time state changes everything is rerendered
+// If start time doesnt get passed in it sets to 0 (default value) this will be useful for reuse of timer if it is counting up such as for the plank option
+
 
 function Timer({ startTime = 0, onComplete }) {
   const [timer, setTimer] = useState(startTime);
