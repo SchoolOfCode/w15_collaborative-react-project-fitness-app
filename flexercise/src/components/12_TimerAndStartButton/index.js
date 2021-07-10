@@ -17,7 +17,7 @@ function Timer({ startTime = 0, onComplete }) {
       const interval = setInterval(() => setTimer(timer - 1), 1000);
       return () => clearInterval(interval);
     }
-  }, [running, timer]);
+  }, [running, timer, onComplete]);
 
   return (
     <div className="timer-container">
@@ -29,7 +29,7 @@ function Timer({ startTime = 0, onComplete }) {
       )}:${(timer % 60).toLocaleString("en-GB", {
         minimumIntegerDigits: 2,
       })}`}</h1>
-      <button className="my-button start" onClick={() => setRunning(true)}>
+      <button className="my-button" id="start" onClick={() => setRunning(true)}>
         START
       </button>
     </div>

@@ -27,32 +27,7 @@
 
 /* video CSS */
 
-.video-responsive {
-  margin-bottom: 20px;
-}
 
-.video-responsive iframe {
-  max-width: 600px;
-  max-height: 400px;
-}
-.timer-container {
-  display: flex;
-  max-height: 200px;
-}
-.timer-box {
-  background-color: #e5e5e5;
-  font-size: 120px;
-  color: black;
-  max-width: 700px;
-  height: 200px;
-  text-align: center;
-  align-self: center;
-}
-
-.start {
-  border-radius: 0%;
-  font-size: 1.5em;
-}
 /* Motivational Page */
 
 .motivation-picture {

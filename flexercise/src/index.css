@@ -93,14 +93,16 @@ code {
   border: solid 1px #f5f5f51a;
 }
 
-.input-text:focus, .select-seed:focus {
+.input-text:focus,
+.select-seed:focus {
   outline: none;
   border: #f9ed32 1px solid;
   background-color: #333333b0;
   color: white;
 }
 
-.input-text:hover, .select-seed:hover {
+.input-text:hover,
+.select-seed:hover {
   border: #f9ed32 2px solid;
 }
 
@@ -116,7 +118,6 @@ input::selection {
   color: white;
   border: solid 1px #f5f5f51a;
 }
-
 
 /* Exercise Pictures with text over */
 
@@ -138,12 +139,12 @@ input::selection {
   margin: 0 10px;
   opacity: 1;
   display: block;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
 .middle {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 1;
   position: absolute;
   bottom: 50px;
@@ -171,6 +172,41 @@ input::selection {
   padding: 5px 10px;
 }
 
+/* TIMER PAGE */
+.video-responsive {
+  margin: 20px 0;
+}
+
+.video-responsive iframe {
+  max-width: 600px;
+  max-height: 340px;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 592px;
+  background-color: #e5e5e5;
+  border: #e5e5e5 4px solid;
+}
+
+.timer-box {
+  background-color: #e5e5e5;
+  font-size: 120px;
+  color: black;
+  height: 150px;
+}
+
+#start {
+  border-radius: 0%;
+  border: none;
+  font-size: 1.5em;
+  height: 150px;
+  margin: 0 0 0 10px;
+}
 
 /* BUTTON */
 .my-button {
