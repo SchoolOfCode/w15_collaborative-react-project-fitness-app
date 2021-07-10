@@ -7,9 +7,9 @@ function LogoImage() {
   return (
     <div className="logo-div">
       <img className="logo-img" src={Logo} alt="logo" />
-// Flexercise picture 
+      {/* Flexercise picture  */}
       <h1 id="title-flexercise">FLEXERCISE</h1>
-// Flexercise slogan
+      {/* Flexercise slogan */}
       <h3 id="slogan-flexercise">Fitness Made Fun</h3>
     </div>
   );
