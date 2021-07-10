@@ -10,8 +10,8 @@ import Plank from "../../images/plank2.jpg";
 const ExerciseSelection = ({ onComplete }) => {
   const exercises = [
     {
-      type: "Sit Ups",
-      source: Situp,
+      type: "Squats",
+      source: Squat,
     },
     {
       type: "Plank",
@@ -19,8 +19,8 @@ const ExerciseSelection = ({ onComplete }) => {
       disabled: true,
     },
     {
-      type: "Squats",
-      source: Squat,
+      type: "Sit Ups",
+      source: Situp,
       disabled: true,
     },
   ];
