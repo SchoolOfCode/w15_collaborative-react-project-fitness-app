@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap');
 
 html,
 body {
@@ -269,13 +269,40 @@ input::selection {
   margin: 0 0 0 10px;
 }
 
+/* INPUT REPS DIV */
+.reps-div > .text-div {
+  background-color: #f5f5f5;
+  color: #232323;
+  font-size: 30px;
+  padding: 20px 50px;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reps-div > .input-text {
+  width: 250px;
+  border-radius: 0;
+  padding: 20px 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 /* MOTIVATION PAGE */
 
+.motivation-div > .text-div {
+  background-color: #f5f5f5;
+  color: #898484;
+  font-size: 25px;
+  padding: 5px 20px;
+  width: 350px;
+  text-align: center;
+  margin-top: 30px;
+}
+
 .motivation-picture {
-  width: 40vw;
-  margin-top: 20px;
-  border: 5px #f5f5f5 solid;
-  border-radius: 20px;
+  width: 390px;
+  border: 1px #f5f5f5 solid;
 }
 
 /* BUTTON */
@@ -321,8 +348,9 @@ input::selection {
 /* LEADERBOARD */
 
 .leaderboard {
-  height: 600px;
+  height: 500px;
   overflow-y: hidden;
+  margin-bottom: 10px;
 }
 
 table {
@@ -333,7 +361,7 @@ table {
 
 td,
 th {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #ffaa22;
   text-align: left;
   padding: 5px;
   text-transform: capitalize;
@@ -350,9 +378,19 @@ th {
 
 #table-name {
   width: 140px;
+  font-weight: 700;
 }
 
 #table-score {
   width: 100px;
   text-align: center;
+}
+
+.leaderboard-div > .small-logo-div {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.leaderboard-div > .my-button {
+  margin-top: 0px;
 }

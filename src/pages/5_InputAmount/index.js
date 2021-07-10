@@ -21,9 +21,9 @@ const InputPage = ({ onComplete, name, seeds }) => {
   }
 
   return (
-    <div className="page-div">
+    <div className="page-div reps-div">
       <SmallLogo />
-      <TextBox className="rep-amount" text="How many reps did you do?" />
+      <TextBox className="rep-amount" text={'How many reps did you do?'} />
       {/* On change it sets the amount of reps into user object */}
       <Input
         placeholder="Enter amount here"
