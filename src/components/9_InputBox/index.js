@@ -2,11 +2,11 @@
 
 import React from "react";
 
-const Input = ({ text, onChange, placeholder }) => {
+const Input = ({ text, onChange, placeholder, type }) => {
   return (
     <input
       className="input-text"
-      type="text"
+      type={type}
       placeholder={placeholder}
       value={text}
       onChange={(e) => onChange(e.target.value)}

@@ -106,8 +106,8 @@ code {
 /* EXERCISE SELECT PAGE */
 
 .page-div > .small-logo-div {
-  margin-top: -50px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .choose-avatar {

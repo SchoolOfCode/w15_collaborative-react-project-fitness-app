@@ -48,6 +48,7 @@ const ExerciseSelection = ({ onComplete }) => {
           placeholder="Enter Name"
           text={name}
           onChange={(value) => setName(value)}
+          type="text"
         />
         {/* This allows the user to change their Avatar and update the value in the user object */}
 

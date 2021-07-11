@@ -37,6 +37,7 @@
   .explanation-background {
     border-radius: 0;
     background-color: #f5f5f5;
+    width: 80vw;
   }
 
   .explanation-background > h1 {

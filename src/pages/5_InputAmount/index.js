@@ -29,6 +29,7 @@ const InputPage = ({ onComplete, name, seeds }) => {
         placeholder="Enter amount here"
         text={amount}
         onChange={(value) => setAmount(value)}
+        type="number"
       />
       {/* On click it runs the add Player function which adds the information to the 
 leaderboard and changes to the leaderboard page.  */}
