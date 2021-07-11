@@ -39,12 +39,12 @@ function App() {
       );
     // This page will change to the next page once the timer start button is pressed and the time elasps
     case "timer":
-      // return (
-      //   <TimerPage
-      //     user={user}
-      //     onComplete={() => setCurrentPage("inputpage")}
-      //   ></TimerPage>
-      // );
+      return (
+        <TimerPage
+          user={user}
+          onComplete={() => setCurrentPage("inputpage")}
+        ></TimerPage>
+      );
     // This page adds the user input of amount of reps they completed into the user object and changes to next page on press of the button.
     case "inputpage":
       return (
