@@ -28,9 +28,10 @@ const Timer = ({ startTime = 0, onComplete }) => {
 
   return (
     <div className="timer-container">
-
-// Shows the timer on the screen in correct format
-// Divides seconds by 60 and renders it as a two digit number (so prefixed with zero if necessary)  Modulus divide so you only get the remainder
+    
+      {/* Shows the timer on the screen in correct format */}
+      {/* Divides seconds by 60 and renders it as a two digit number (so prefixed with zero if necessary)  
+Modulus divide so you only get the remainder */}
 
       <h1 className="timer-box">{`${Math.floor(timer / 60).toLocaleString(
         "en-GB",
