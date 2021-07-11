@@ -15,7 +15,9 @@ const Timer = ({ startTime = 0, onComplete }) => {
         onComplete();
         return;
       }
+
       // This removes 1 from the timer amount every second
+
       const interval = setInterval(() => setTimer(timer - 1), 1000);
 
       // This is the clean up function to clear the interval fron above function
@@ -26,7 +28,10 @@ const Timer = ({ startTime = 0, onComplete }) => {
 
   return (
     <div className="timer-container">
-      {/* This rounds the number down, divides the timer amount by 60 and changes it to have at least 2 digits to replicate the 2 timer design */}
+
+// Shows the timer on the screen in correct format
+// Divides seconds by 60 and renders it as a two digit number (so prefixed with zero if necessary)  Modulus divide so you only get the remainder
+
       <h1 className="timer-box">{`${Math.floor(timer / 60).toLocaleString(
         "en-GB",
         {
