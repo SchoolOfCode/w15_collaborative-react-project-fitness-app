@@ -1,7 +1,7 @@
 self.addEventListener("install", e => {
     e.waitUntil(
         caches.open("static").then(cache => {
-            return cache.addAll(["%PUBLIC_URL%/logo192.png"])
+            return cache.addAll(["/w15_collaborative-react-project-fitness-app/logo192.png"])
         })
     );
  });

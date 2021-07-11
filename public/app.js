@@ -1,6 +1,6 @@
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker
-      .register('%PUBLIC_URL%/serviceWorker.js', {scope: '%PUBLIC_URL%/'})
+      .register('/w15_collaborative-react-project-fitness-app/serviceWorker.js', {scope: '/w15_collaborative-react-project-fitness-app/'})
       .then(registration => {
           console.log("service worker registered");
       }).catch(error => {
