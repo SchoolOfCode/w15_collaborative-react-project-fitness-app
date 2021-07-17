@@ -13,7 +13,9 @@ const TimerPage = ({ onComplete, user }) => {
 
       {/* Once Timer has counted down, the page will change to the input page.  */}
       {/* change to 120 past testing */}
-      <Timer startTime={120} onComplete={onComplete} />
+      <Timer startTime={3} 
+      // onComplete={onComplete} 
+      />
     </div>
   );
 };

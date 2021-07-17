@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import TextBox from "../../components/4_TextBox";
 import Line from "../../components/7_Line";
 
@@ -43,9 +44,11 @@ const Explanation = ({ onComplete }) => {
         />
       </div>
       {/* This button will take the user to the next page */}
+      <Link to="/exercise-choice">
       <button className="my-button" onClick={onComplete}>
         Continue
       </button>
+      </Link>
     </div>
   );
 };

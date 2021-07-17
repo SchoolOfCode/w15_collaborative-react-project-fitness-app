@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import SmallLogo from "../../components/0_SmallLogo";
 import TextBox from "../../components/4_TextBox";
 import Input from "../../components/9_InputBox";
 
 // This page allows the user to enter the amount of Reps they did so this can be added to the leaderboard
 //This takes in an oncomplete the name of the user and the avatar
-const InputPage = ({ onComplete, name, seeds }) => {
+const InputPage = ({ name, seeds }) => {
   // The inital value is set to blank
   const [amount, setAmount] = useState("");
   // This is the API key for the leaderboard
@@ -17,7 +18,7 @@ const InputPage = ({ onComplete, name, seeds }) => {
     }/${amount || "0"}/120/${seeds || "micah"}`;
     await fetch(addURL);
 
-    onComplete(amount);
+    // onComplete(amount);
   }
 
   return (
@@ -33,10 +34,13 @@ const InputPage = ({ onComplete, name, seeds }) => {
       />
       {/* On click it runs the add Player function which adds the information to the 
 leaderboard and changes to the leaderboard page.  */}
+    <Link to="motivation">
       <button className="my-button" id="submit-button" onClick={addPlayer}>
         Submit
       </button>
+    </Link>
     </div>
+ 
   );
 };
 

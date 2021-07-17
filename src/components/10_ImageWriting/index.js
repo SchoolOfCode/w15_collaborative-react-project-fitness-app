@@ -1,5 +1,4 @@
 // This adds the an image box with writing over the top of it. The disabled tag allows us to make it unclickable and we can style them so user knows they are not avaliable.
-
 import React from "react";
 
 const ImageText = ({ image, name, onClick, disabled }) => {

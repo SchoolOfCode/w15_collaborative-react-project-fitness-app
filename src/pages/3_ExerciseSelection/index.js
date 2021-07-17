@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import SmallLogo from "../../components/0_SmallLogo";
 import Input from "../../components/9_InputBox";
 import HeadingText from "../../components/6_HeadingText";
@@ -83,13 +84,15 @@ onComplete changes to the next page when a selection is made.  */}
 
       <div className="exercise-images">
         {exercises.map((exercise) => (
-          <ImageText
-            onClick={() => onComplete(name, seeds, exercise)}
-            image={exercise.source}
-            name={exercise.type}
-            key={exercise.type}
-            disabled={exercise.disabled}
-          />
+          <Link to="/timer">
+            <ImageText
+              // onClick={() => onComplete(name, seeds, exercise)}
+              image={exercise.source}
+              name={exercise.type}
+              key={exercise.type}
+              disabled={exercise.disabled}
+            />
+          </Link>
         ))}
       </div>
     </div>

@@ -1,5 +1,5 @@
 // This is a timer that can count down from the required time. The time is set on the timer page above
-
+import { Redirect } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 
 // If start time doesnt get passed in it sets to 0 (default value) this will be useful for reuse of timer if it is counting up such as for the plank option
@@ -7,13 +7,13 @@ import React, { useEffect, useState } from "react";
 const Timer = ({ startTime = 0, onComplete }) => {
   const [timer, setTimer] = useState(startTime);
   const [running, setRunning] = useState(false);
+  const [complete, setCompleted] = useState(false);
 
   // Use Effects fires this function after every render unless it has dependencies, in this case it only fires when timer is running, the timer starts or time gets to 0
   useEffect(() => {
     if (running) {
       if (timer === 0) {
-        onComplete();
-        return;
+        setCompleted(true);
       }
 
       // This removes 1 from the timer amount every second
@@ -24,7 +24,7 @@ const Timer = ({ startTime = 0, onComplete }) => {
       return () => clearInterval(interval);
     }
     // Dependencies set so function only runs when timer is running, the timer starts or time gets to 0
-  }, [running, timer, onComplete]);
+  }, [running, timer]);
 
   return (
     <div className="timer-container">
@@ -46,6 +46,7 @@ Modulus divide so you only get the remainder */}
       <button className="my-button" id="start" onClick={() => setRunning(true)}>
         START
       </button>
+      {complete ? <Redirect to="/profile"/> : null}
     </div>
   );
 };
