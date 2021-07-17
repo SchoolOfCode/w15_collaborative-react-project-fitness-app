@@ -4,7 +4,8 @@ import TextBox from "../../components/4_TextBox";
 import Line from "../../components/7_Line";
 
 // This page explains to the user how they can use the App.
-const Explanation = ({ onComplete }) => {
+const Explanation = () => {
+
   return (
     <div className="page-div">
       <div className="explanation-background">
@@ -28,7 +29,7 @@ const Explanation = ({ onComplete }) => {
         <TextBox className="explanation-text" text="Pick Exercise" />
         <TextBox
           className="explanation-text"
-          text="You will be asked to start a 2 minute timer"
+          text="Start the 2 minute timer when you are ready"
         />
         <TextBox
           className="explanation-text"
@@ -43,11 +44,11 @@ const Explanation = ({ onComplete }) => {
           text="Your score will be entered on the daily leaderboard so you can challenge other people "
         />
       </div>
-      {/* This button will take the user to the next page */}
+
       <Link to="/exercise-choice">
-      <button className="my-button" onClick={onComplete}>
-        Continue
-      </button>
+        <button className="my-button" >
+          Continue
+        </button>
       </Link>
     </div>
   );

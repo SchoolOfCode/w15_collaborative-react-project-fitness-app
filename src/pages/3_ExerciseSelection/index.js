@@ -9,7 +9,7 @@ import Situp from "../../images/situp.jpg";
 import Plank from "../../images/plank2.jpg";
 
 // This page allows the user to enter their name and select what exercise they will do
-const ExerciseSelection = ({ onComplete }) => {
+const ExerciseSelection = ({dispatch}) => {
   // This is an object that allows us to add more exercises for the user to select
   const exercises = [
     {
@@ -32,6 +32,10 @@ const ExerciseSelection = ({ onComplete }) => {
   const [name, setName] = useState("");
   // This sets the avatar picture to be an initial value of the picture micah
   const [seeds, setSeeds] = useState("micah");
+
+  const handleName = (e) =>{
+      dispatch({type:"SET_NAME", payload:"Woody"})
+  }
 
   return (
     <div className="page-div selection-div">
@@ -84,9 +88,8 @@ onComplete changes to the next page when a selection is made.  */}
 
       <div className="exercise-images">
         {exercises.map((exercise) => (
-          <Link to="/timer">
+          <Link to="/timer" onClick={(e) => handleName(e)}>
             <ImageText
-              // onClick={() => onComplete(name, seeds, exercise)}
               image={exercise.source}
               name={exercise.type}
               key={exercise.type}

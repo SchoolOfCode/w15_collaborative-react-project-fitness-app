@@ -1,6 +1,7 @@
-//import page components to the app
 import React, { useState, useReducer, Component } from "react";
 import { Route, Switch } from 'react-router-dom';
+import { userReducer } from "./userReducer";
+
 import Homepage from "../pages/1_Homepage/index";
 import Explanation from "../pages/2_Explanation/index";
 import ExerciseSelection from "../pages/3_ExerciseSelection";
@@ -12,15 +13,18 @@ import Error from "../pages/8_Error"
 
 function App() {
 
-  // Creates an inital value of an empty object to store our user information in as you go through the app
-  const [user, setUser] = useState({});
+  const [userState, dispatch] = useReducer(userReducer, {
+    name:"",
+    avatarSeed:"micah",
+    score: 0,
+  })
 
   return (
     <main>
       <Switch>
-        <Route path="/" component={Homepage} exact />
-        <Route path="/explanation" component={Explanation}  />
-        <Route path="/exercise-choice" component={ExerciseSelection}  />
+        <Route path="/" exact ><Homepage /></Route>
+        <Route path="/explanation"><Explanation /></Route>
+        <Route path="/exercise-choice"><ExerciseSelection dispatch={dispatch} /></Route>
         <Route path="/timer" component={TimerPage}  />
         <Route path="/profile" component={InputPage}  />
         <Route path="/motivation" component={MotivationPage}  />
@@ -29,14 +33,6 @@ function App() {
       </Switch>
     </main>
   )
-
-  // switch (currentPage) {
-  //   case "homepage":
-  //     return <Homepage onComplete={() => setCurrentPage("explanation")} />;
-  //   case "explanation":
-  //     return (
-  //       <Explanation onComplete={() => setCurrentPage("exerciseselection")} />
-  //     );
   //   case "exerciseselection":
   //     // This page stores the name and exercise selection into the user object
   //     if (user.name !== undefined) setUser({});

@@ -6,20 +6,20 @@ import Input from "../../components/9_InputBox";
 
 // This page allows the user to enter the amount of Reps they did so this can be added to the leaderboard
 //This takes in an oncomplete the name of the user and the avatar
-const InputPage = ({ name, seeds }) => {
+const InputPage = () => {
   // The inital value is set to blank
   const [amount, setAmount] = useState("");
   // This is the API key for the leaderboard
   const PRIVATE = "3XrM-f9kdUeAuuv95QrE8Aal7MEJy5UUGMfgoBYZMR4A";
   // This fetches the leaderboard information from the API and adds the information from the User Object into the leaderboard
-  async function addPlayer() {
-    const addURL = `https://www.dreamlo.com/lb/${PRIVATE}/add/${
-      name || "Anonymous"
-    }/${amount || "0"}/120/${seeds || "micah"}`;
-    await fetch(addURL);
+  // async function addPlayer() {
+  //   const addURL = `https://www.dreamlo.com/lb/${PRIVATE}/add/${
+  //     name || "Anonymous"
+  //   }/${amount || "0"}/120/${seeds || "micah"}`;
+  //   await fetch(addURL);
 
-    // onComplete(amount);
-  }
+  //   onComplete(amount);
+  // }
 
   return (
     <div className="page-div reps-div">
@@ -35,7 +35,7 @@ const InputPage = ({ name, seeds }) => {
       {/* On click it runs the add Player function which adds the information to the 
 leaderboard and changes to the leaderboard page.  */}
     <Link to="motivation">
-      <button className="my-button" id="submit-button" onClick={addPlayer}>
+      <button className="my-button" id="submit-button">
         Submit
       </button>
     </Link>
