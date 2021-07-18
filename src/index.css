@@ -348,11 +348,23 @@ input::selection {
 
 /* LEADERBOARD */
 
+
+
 .leaderboard {
-  height: 500px;
-  overflow-y: hidden;
+  /* height: 500px; */
+  /* overflow-y: hidden; */
   margin-bottom: 10px;
-}
+  display: block;
+  overflow: auto;
+  -ms-overflow-style: none; /* IE*/
+  scrollbar-width: none; /* Firefox */
+  }
+  /* Leaderboard scrolling issue fixed by 
+Gurmukh Chandan
+ */
+  .leaderboard::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+  }
 
 table {
   border-collapse: collapse;
