@@ -1,5 +1,5 @@
 //import page components to the app
-import React, { useState } from "react";
+import React, { useState, useReducer } from "react";
 import Homepage from "../pages/1_Homepage/index";
 import Explanation from "../pages/2_Explanation/index";
 import ExerciseSelection from "../pages/3_ExerciseSelection";
@@ -8,12 +8,50 @@ import InputPage from "../pages/5_InputAmount";
 import MotivationPage from "../pages/6_Motivation";
 import LeaderboardPage from "../pages/7_LeaderboardPage";
 
+function reducer(userState,action){
+  if (action.type === "SET_NAME"){
+    return {
+      ...userState,
+      name: action.payload
+    }
+  }
+  if (action.type === "SET_SEED"){
+    return {
+      ...userState,
+      seeds: action.payload
+    }
+  }
+  if (action.type === "SET_EXERCISE"){
+    return {
+      ...userState,
+      exerciseType: action.payload.exerciseType,
+      exerciseSource: action.payload.exerciseSource
+    }
+  }
+  if(action.type === "SET_AMOUNT"){
+    return {
+      ...userState,
+      amount: action.payload
+    }
+  }
+  return userState
+}
+
+const initialUserState = {
+  name:"",
+  exerciseType:"",
+  exerciseSource: "",
+  seeds: "micah",
+  amount: 0
+}
+
 function App() {
   // The first page it shows is the homepage
   const [currentPage, setCurrentPage] = useState("homepage");
   // Creates an inital value of an empty object to store our user information in as you go through the app
   const [user, setUser] = useState({});
-  // This controls what page you are on. Once the button is clicked it will change to the next page.
+  const [userState,dispatch] = useReducer(reducer,initialUserState)
+  // This controls what prrage you are on. Once the button is clicked it will change to the next page.
   switch (currentPage) {
     case "homepage":
       return <Homepage onComplete={() => setCurrentPage("explanation")} />;
@@ -26,13 +64,9 @@ function App() {
       if (user.name !== undefined) setUser({});
       return (
         <ExerciseSelection
-          onComplete={(name, seeds, exercise) => {
-            setUser({
-              ...user,
-              name,
-              exercise,
-              seeds,
-            });
+          user={userState}
+          dispatch={dispatch}
+          onComplete={ () => {
             setCurrentPage("timer");
           }}
         />
@@ -73,6 +107,8 @@ function App() {
           onComplete={() => setCurrentPage("exerciseselection")}
         />
       );
+      default:
+        return;
   }
 }
 
