@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import TextBox from "../../components/4_TextBox";
 import SmallLogo from "../../components/0_SmallLogo";
 import Sunrise from "../../images/sunrise.png";
@@ -21,10 +22,7 @@ const MotivationPage = () => {
 
       {/* The button takes you to the next page */}
       <Link to="/leaderboard">
-      <button 
-      className="my-button" 
-      // onClick={onComplete}
-      >
+      <button className="my-button">
         Continue
       </button>
       </Link>

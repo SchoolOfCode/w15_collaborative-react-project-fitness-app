@@ -1,7 +1,9 @@
 import React from "react";
-import LogoImage from "../../components/2_Logo";
 import { Link} from "react-router-dom";
-// This page is the Home Page, the onComplete prop changes to the next page on press of the advance button
+
+import LogoImage from "../../components/2_Logo";
+
+// This page is the Home Page
 
 const Homepage = () => {
   return (

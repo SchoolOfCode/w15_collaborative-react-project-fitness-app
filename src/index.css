@@ -346,13 +346,21 @@ input::selection {
   margin-top: 20px;
 }
 
-/* LEADERBOARD */
-
+/* LEADERBOARD*/
+/* with hidden scrollbar - better for mobile IMO
+- remove the IE/FF/Saf/Chrome commented lines
+to show the scroll bar
+*/
 .leaderboard {
-  height: 500px;
-  overflow-y: hidden;
   margin-bottom: 10px;
-}
+  display: block;
+  overflow: auto;
+  -ms-overflow-style: none; /* IE*/
+  scrollbar-width: none; /* Firefox */
+  }
+.leaderboard::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+  }
 
 table {
   border-collapse: collapse;
