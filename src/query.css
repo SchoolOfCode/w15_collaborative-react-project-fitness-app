@@ -1,0 +1,129 @@
+@media screen and (max-width: 1000px) {
+ 
+/* BACKGROUND  */
+.homepage-div {
+  background-image: url("./images/Lunge.jpg");
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .small-logo {
+    width: 70px;
+  }
+
+  .logo-img {
+    width: 40%;
+  }
+
+  .my-button {
+    font-size: 12px;
+  }
+
+  .page-div {
+    width: 100%;
+    max-height: 100vh;
+  }
+
+  #title-flexercise {
+    font-size: 2.5em;
+  }
+
+  .explanation-background {
+    border-radius: 0;
+    background-color: #f5f5f5;
+    width: 80vw;
+  }
+
+  .explanation-background > h1 {
+    font-size: 1.2em;
+  }
+
+  .text-div > p {
+    font-size: 14px;
+  }
+
+  .nameinput-div {
+    flex-direction: column;
+    margin-top: 300px;
+  }
+
+  select {
+    display: none;
+  }
+
+  .selection-div > .small-logo-div {
+    display: none;
+  }
+
+  .choose-avatar {
+    width: 20%;
+    margin: 0 0 10px 0;
+  }
+
+  .exercise-images {
+    flex-direction: column;
+  }
+
+  .middle {
+    bottom: 40px;
+  }
+
+  .text {
+    font-size: 30px;
+  }
+
+  .select-img {
+    width: 300px;
+    height: 200px;
+    margin: 10px 0;
+  }
+
+  .video-responsive iframe {
+    max-width: 90vw;
+    height: 50vw;
+  }
+
+  .timer-container {
+    width: 90vw;
+    height: 80px;
+  }
+
+  .timer-box {
+    font-size: 50px;
+    height: 70px;
+  }
+
+  #start {
+    font-size: 1em;
+    height: 80px;
+    margin: 0 0 0 20px;
+  }
+
+  .motivation-picture {
+    width: 100vw;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+  }
+
+  .motivation-div > .text-div {
+    text-align: center;
+  }
+
+  .results-avatar {
+    width: 30px;
+  }
+
+  table {
+    border: none;
+    margin-top: 20px;
+  }
+
+
+}
