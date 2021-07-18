@@ -3,7 +3,7 @@
 
 import React from "react";
 import Logo from "../../images/logo512.png";
-
+// woohoo
 const SmallLogo = () => {
   return (
     <div className="small-logo-div">
