@@ -1,15 +1,14 @@
 import React from "react";
-import { render, cleanup } from "@testing-library/react";
-import {Router} from 'react-router-dom';
+import { render, screen } from "@testing-library/react";
 import Homepage from "./index"
-import { createMemoryHistory } from "history";
 
-afterEach(cleanup)
+describe("Sequentially testing rendering of pages in the linear site", () => {
+  test("Renders homepage button and content on loading", () => {
+    render(
+    <Homepage />
+    );
+    expect(screen.getByTestId("homepage-div")).toBeInTheDocument();
+  });
 
-test("Test the button to navigate to the next page exists", () => {
-  const history = createMemoryHistory()
-  const {getByRole} = render(  <Router history={history}><Homepage /></Router>)
-  const button = getByRole('button',{class: /my-button/i})
-  expect(button).toBeInTheDocument()
 })
 
