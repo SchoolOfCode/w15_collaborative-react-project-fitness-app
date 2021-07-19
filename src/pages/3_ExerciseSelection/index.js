@@ -29,6 +29,7 @@ const ExerciseSelection = ({user,dispatch}) => {
     },
   ];
 
+  
   return (
     <div className="page-div selection-div">
       <SmallLogo />
@@ -41,12 +42,7 @@ const ExerciseSelection = ({user,dispatch}) => {
           alt=""
         />
         {/* This allows the user to enter their name, on change it will set the value of the name in the user object  */}
-        <Input
-          placeholder="Enter Name"
-          text={user.name}
-          onChange={(value) => dispatch({type:"SET_NAME", payload:value})}
-          type="text"
-        />
+        <Input user={user} dispatch={dispatch}/>
         {/* This allows the user to change their Avatar and update the value in the user object */}
 
         <select
@@ -80,7 +76,7 @@ onComplete changes to the next page when a selection is made.  */}
 
       <div className="exercise-images">
         {exercises.map((exercise) => (
-          <Link to="/timer">
+          <Link to="/timer" key={exercise.type}>
             <ImageText
               onClick={(e) => dispatch({
                 type:"SET_EXERCISE", 

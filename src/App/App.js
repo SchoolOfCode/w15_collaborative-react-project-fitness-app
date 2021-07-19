@@ -22,17 +22,10 @@ function App() {
   }
   const [userState,dispatch] = useReducer(userReducer,initialUserState)
   
-  //To set the base URL if we are running locally vs live on a server for react routing
-  const baseURL = (
-    window.location.hostname === "localhost" || 
-    window.location.hostname === "127.0.0.1" || 
-    window.location.hostname === "")?
-    "/w15_collaborative-react-project-fitness-app":"/"
-
   return (
     <main>
       <Switch>
-        <Route path={baseURL}>
+        <Route path="/" exact>
           <Homepage />
         </Route>
         <Route path="/explanation">

@@ -2,14 +2,13 @@
 
 import React from "react";
 
-const Input = ({ text, onChange, placeholder, type }) => {
+const Input = ({ user, dispatch }) => {
   return (
     <input
       className="input-text"
-      type={type}
-      placeholder={placeholder}
-      value={text}
-      onChange={(e) => onChange(e.target.value)}
+      type="text"
+      placeholder="Enter your name"
+      onBlur={(e) => dispatch({type:"SET_NAME", payload:e.target.value})}
     />
   );
 };
