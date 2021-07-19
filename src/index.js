@@ -6,7 +6,7 @@ import './query.css'
 import App from './App/App'
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter >
     <App />
   </BrowserRouter>,
   document.getElementById('root')
