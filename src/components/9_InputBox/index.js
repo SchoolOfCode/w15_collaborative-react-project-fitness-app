@@ -6,6 +6,7 @@ const Input = ({ text, onChange, placeholder, type }) => {
   return (
     <input
       className="input-text"
+      data-testid="name-input"
       type={type}
       placeholder={placeholder}
       value={text}

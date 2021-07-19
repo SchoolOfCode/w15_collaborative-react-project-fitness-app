@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -29,6 +30,30 @@ const ExerciseSelection = ({user,dispatch}) => {
     },
   ];
 
+  const avatars = [
+    {value:"micah",     text: "Micah"},
+    {value:"human",     text: "Human"},
+    {value:"female",    text: "Female"},
+    {value:"male",      text: "Male"},
+    {value:"bottts",    text: "Bots"},
+    {value:"avataaars", text: "Avatars"},
+    {value:"identicon", text: "Identicon"},
+    {value:"jdenticon", text: "Jdenticon"},
+    {value:"gridy",     text: "Gridy"},
+    {value:"initials",  text: "Initials"},
+  ]
+  const avatarSelectGroup = []
+  avatars.forEach((avatar,index)=>{
+    avatarSelectGroup.push(
+    <option 
+      key={`${index}_${avatar.value}`}
+      value={avatar.value}
+      data-testid={`${avatar.value}`}
+      >
+        {avatar.text}
+    </option>
+    )
+  })
   return (
     <div className="page-div selection-div">
       <SmallLogo />
@@ -55,18 +80,7 @@ const ExerciseSelection = ({user,dispatch}) => {
           id="seeds"
           name="seed"
         >
-          <optgroup label="Select">
-            <option value="micah">Micah</option>
-            <option value="human">Human</option>
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-            <option value="bottts">Bots</option>
-            <option value="avataaars">Avatars</option>
-            <option value="identicon">Identicon</option>
-            <option value="jdenticon">Jdenticon</option>
-            <option value="gridy">Gridy</option>
-            <option value="initials">Initials</option>
-          </optgroup>
+          {avatarSelectGroup}
         </select>
       </div>
 
@@ -79,8 +93,8 @@ A value of disabled was added as on the first iteration we will only be allowing
 onComplete changes to the next page when a selection is made.  */}
 
       <div className="exercise-images">
-        {exercises.map((exercise) => (
-          <Link to="/timer">
+        {exercises.map((exercise, index) => (
+          <Link to="/timer"key ={`link-${index}`}>
             <ImageText
               onClick={(e) => dispatch({
                 type:"SET_EXERCISE", 
