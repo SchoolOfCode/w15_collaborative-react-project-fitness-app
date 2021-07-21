@@ -8,7 +8,7 @@ const ImageText = ({ image, name, onClick, disabled }) => {
         id="choose-exercise"
         className={`exerciseImage ${disabled ? "disabled" : null}`}
       >
-        <img className="select-img" src={image} alt={name} />
+        <img className="select-img" src={image} alt={name} data-testid={`test-${name}`}/>
         <h2 className="middle">
           <span className="text">{name}</span>
         </h2>

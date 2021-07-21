@@ -43,15 +43,14 @@ const ExerciseSelection = ({user,dispatch}) => {
         />
         {/* This allows the user to enter their name, on change it will set the value of the name in the user object  */}
         <Input user={user} dispatch={dispatch}/>
-        {/* This allows the user to change their Avatar and update the value in the user object */}
-
         <select
           className="select-seed"
           onChange={(e) => dispatch({type: "SET_SEED", payload: e.target.value})}
           id="seeds"
           name="seed"
+          label="Select"
+          data-testid="avatarChoice"
         >
-          <optgroup label="Select">
             <option value="micah">Micah</option>
             <option value="human">Human</option>
             <option value="female">Female</option>
@@ -62,7 +61,6 @@ const ExerciseSelection = ({user,dispatch}) => {
             <option value="jdenticon">Jdenticon</option>
             <option value="gridy">Gridy</option>
             <option value="initials">Initials</option>
-          </optgroup>
         </select>
       </div>
 

@@ -4,9 +4,13 @@ import React from "react";
 import Logo from "../../images/logo.svg";
 
 const LogoImage = () => {
+ 
   return (
     <div className="logo-div">
-      <img className="logo-img" src={Logo} alt="logo" />
+      <img 
+        className="logo-img" 
+        src={Logo}
+        alt="logo" />
       {/* Flexercise picture  */}
       <h1 id="title-flexercise">FLEXERCISE</h1>
       {/* Flexercise slogan */}
