@@ -6,7 +6,7 @@ import YoutubeEmbed from "../../components/11_Video";
 
 // This page shows the video of how to do a Squat and displays the timer
 // It takes the user object in which will change what video/timer is displayed in future iterations.
-const TimerPage = ({ user }) => {
+const TimerPage = ({ time=120 }) => {
   return (
     <div className="page-div">
       <SmallLogo />
@@ -14,7 +14,7 @@ const TimerPage = ({ user }) => {
 
       {/* Once Timer has counted down, the page will change to the input page.  */}
       {/* change to 120 past testing */}
-      <Timer startTime={3} 
+      <Timer startTime={time} 
       // onComplete={onComplete} 
       />
     </div>
