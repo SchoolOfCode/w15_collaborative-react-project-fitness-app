@@ -13,10 +13,7 @@ const TimerPage = ({ time=120 }) => {
       <YoutubeEmbed embedId="9OfycnUL0h8?ecver=1&amp" />
 
       {/* Once Timer has counted down, the page will change to the input page.  */}
-      {/* change to 120 past testing */}
-      <Timer startTime={time} 
-      // onComplete={onComplete} 
-      />
+      <Timer totalTime={time} />
     </div>
   );
 };

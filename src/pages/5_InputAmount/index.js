@@ -19,18 +19,12 @@ const InputPage = ({user, dispatch}) => {
       user.seeds || "micah"}`;
     await fetch(addURL);
   }
-
   return (
     <div className="page-div reps-div">
       <SmallLogo />
       <TextBox className="rep-amount" text={'How many reps did you do?'} />
       {/* On change it sets the amount of reps into user object */}
-      <Input
-        placeholder="Enter amount here"
-        text={user.amount}
-        onChange={(value) => dispatch({type:"SET_AMOUNT", payload:value})}
-        type="number"
-      />
+      <Input user={user} dispatch={dispatch} action={"SET_AMOUNT"}/>
       {/* On click it runs the add Player function which adds the information to the 
 leaderboard and changes to the leaderboard page.  */}
     <Link to="motivation">

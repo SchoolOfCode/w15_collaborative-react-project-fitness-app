@@ -15,8 +15,7 @@ const Leaderboard = () => {
     const response = await fetch(URL);
     const data = await response.json();
     setResult(data.dreamlo.leaderboard.entry);
-    console.log(result);
-  }, [result]);
+  }, []);
 
   // Only run when update results happens
   useEffect(() => {
@@ -26,11 +25,12 @@ const Leaderboard = () => {
   // displays the leader board on the page
   return (
     <div className="leaderboard">
-      <table>
-        {result.length > 0 ? (
-          result.map((user) => {
+      {result.length > 0 ? (
+      <table key="leaderboard-table" data-testid="leaderboard-table">
+        <tbody key="results">
+          {result.map((user, index) => {
             return (
-              <tr>
+              <tr key={`${index}_${user.name}`}>
                 <td id="table-avatar">
                   <img
                     className="results-avatar"
@@ -42,11 +42,9 @@ const Leaderboard = () => {
                 <td id="table-score">{user.score}</td>
               </tr>
             );
-          })
-        ) : (
-          <p>Loading...</p>
-        )}
-      </table>
+          })}
+        </tbody>
+      </table>):<p>Loading...</p>}
     </div>
   );
 };

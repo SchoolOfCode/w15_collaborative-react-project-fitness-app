@@ -18,7 +18,7 @@ function App() {
     exerciseType:"",
     exerciseSource: "",
     seeds: "micah",
-    amount: 0,
+    amount: "0",
   }
   const [userState,dispatch] = useReducer(userReducer,initialUserState)
   
@@ -37,7 +37,7 @@ function App() {
         <Route path="/timer">
           <TimerPage user={userState} />
         </Route>
-        <Route path="/profile">
+        <Route path="/amount">
           <InputPage user={userState} dispatch={dispatch} />
         </Route>
         <Route path="/motivation">

@@ -42,7 +42,7 @@ const ExerciseSelection = ({user,dispatch}) => {
           alt=""
         />
         {/* This allows the user to enter their name, on change it will set the value of the name in the user object  */}
-        <Input user={user} dispatch={dispatch}/>
+        <Input user={user} dispatch={dispatch} action={"SET_NAME"}/>
         <select
           className="select-seed"
           onChange={(e) => dispatch({type: "SET_SEED", payload: e.target.value})}
