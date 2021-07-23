@@ -24,6 +24,7 @@ const YoutubeEmbed = ({ embedId }) => {
       allowFullScreen
       title={isLoaded?"Embedded youtube":"Error Loading Video"}
       onLoad={()=> setIsLoaded(true)}
+      data-cy="youtube-frame"
     />
   </div>
   )

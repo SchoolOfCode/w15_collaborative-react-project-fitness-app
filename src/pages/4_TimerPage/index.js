@@ -10,7 +10,7 @@ const TimerPage = ({ time=120 }) => {
   return (
     <div className="page-div">
       <SmallLogo />
-      <YoutubeEmbed embedId="9OfycnUL0h8?ecver=1&amp" />
+      <YoutubeEmbed embedId="9OfycnUL0h8?ecver=1&amp"/>
 
       {/* Once Timer has counted down, the page will change to the input page.  */}
       <Timer totalTime={time} />
