@@ -403,3 +403,16 @@ th {
 .leaderboard-div > .my-button {
   margin-top: 0px;
 }
+
+.error-div{
+  max-height: 100vh;
+}
+.error-div > .text-div {
+  background-color: #f5f5f5;
+  color: #898484;
+  font-size: 25px;
+  padding: 5px 20px;
+  width: 80vw;
+  text-align: center;
+  margin-top: 30px;
+}

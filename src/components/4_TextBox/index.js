@@ -6,7 +6,7 @@
 
 import React from "react";
 
-const TextBox = ({ text }) => {
+const TextBox = ({text}) => {
   return (
     <div className="text-div">
       <p>{text}</p>
