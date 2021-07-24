@@ -67,7 +67,40 @@ After a brief motivational message, you can see the scrollable leaderboard, and 
 
 ## Documentation
 
-Todo....
+### Examples - Interactive Components 
+
+**Input**
+
+```javascript
+import Input from "../../components/9_InputBox";
+
+function App() {
+  return <Input user={**state**} dispatch={**dispatch**} action={"SOME_ACTION"}/>
+}
+```
+Input will generate an input form, with an onBlur event, so that when focus is lost, it will dispatch the value to a reducer function.
+The state and dispatch function should be passed down as a prop.
+  
+  The action prop will change the behaviour of the input by changing the payload sent to the reducer e.g. changing the name or changing the amount of the user state.
+
+  
+**Timer**
+
+```javascript
+import Timer from "../../components/12_TimerAndStartButton";
+
+function App() {
+  return <Timer totalTime={**target time in seconds**} />
+}
+```
+The timer is built utilising a library react-countdown.
+It utilises Date objects to accurately get the current time, set a target time, and countdown towards that.
+This prevents blocking processes from interfering with the time if setInterval were used in isolation.
+  
+The default time is zero, if no time prop is supplied.  
+Once the timer reaches zero, it will trigger navigation to the next page.
+
+
 
   
 ## Tech Stack
