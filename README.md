@@ -37,6 +37,33 @@ If you have to run the tests on a different port, then edit the baseURL variable
 ```
 /cypress/integration/App-test.spec.js
 ```
+## Usage  
+<img src="https://github.com/SchoolOfCode/w15_collaborative-react-project-fitness-app/blob/gc_testing-and-documentation/src/images/amount.png?raw=true" height=350/>  <img src="https://github.com/SchoolOfCode/w15_collaborative-react-project-fitness-app/blob/gc_testing-and-documentation/src/images/explanation.png?raw=true" height=350/>  
+   
+   
+After entering the app, click the button to see the explanation page.  
+  
+  
+<img src="https://github.com/SchoolOfCode/w15_collaborative-react-project-fitness-app/blob/gc_testing-and-documentation/src/images/choice.png?raw=true" height=500/>  
+  
+    
+Once you have read the instructions and are motivated to proceed, click the button to enter a name and choose an avatar style (this is completely optional, you will be Anonymous without entering a name). Then choose from the range of exercises presented. Once you have clicked on your chosen exercise, and are ready to go, start the timer and count your repetitions. A video to help if you aren;t sure of your technique is also available.  
+  
+  
+  
+<img src="https://github.com/SchoolOfCode/w15_collaborative-react-project-fitness-app/blob/gc_testing-and-documentation/src/images/timer.png?raw=true" height=350/>  
+  
+  
+  
+Once the the countdown has ended, it will take you to the next page where you can enter the number of repetitions you completed.
+It will automatically update your score on the leaderboard, if you have enetered your name exactly the same as your previous time, if you have used the app before.  
+
+  
+  
+<img src="https://github.com/SchoolOfCode/w15_collaborative-react-project-fitness-app/blob/gc_testing-and-documentation/src/images/leaderboard.png?raw=true" height=350/>   
+  
+  
+After a brief motivational message, you can see the scrollable leaderboard, and choose to try again if you wish.
 
 ## Documentation
 
