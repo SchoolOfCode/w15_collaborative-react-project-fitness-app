@@ -118,6 +118,6 @@ Once the timer reaches zero, it will trigger navigation to the next page.
 
 Code review and Read Me by 
 
--- [@Gurmukh Chandan](https://github.com/gschandan)
+- [@Gurmukh Chandan](https://github.com/gschandan)
 
   
